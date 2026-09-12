@@ -276,21 +276,21 @@
   </div>
 
   <div class="topbar">
-    <button class="ctrl" id="themeBtn" aria-label="Toggle light and dark mode">
+    <button class="ctrl" id="themeBtn" data-i-aria="ui_theme" aria-label="Toggle light and dark mode">
       <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     </button>
-    <button class="ctrl" id="langBtn" aria-label="Change language" aria-expanded="false"><span class="flag-svg" id="langBtnFlag"></span></button>
+    <button class="ctrl" id="langBtn" data-i-aria="ui_language" aria-label="Change language" aria-expanded="false"><span class="flag-svg" id="langBtnFlag"></span></button>
   </div>
 
-  <div class="langmenu" id="langMenu" role="listbox" aria-label="Languages"></div>
+  <div class="langmenu" id="langMenu" role="listbox" data-i-aria="ui_languages" aria-label="Languages"></div>
 
   <main class="page">
     <div class="wrap">
 
       <div class="center">
-        <button class="portrait-btn" id="photoBtn" aria-label="View photo full screen">
-          <span class="ring"><span class="ring-in"><span class="ring-clip"><img src="founder-lee.webp" alt="Lee Frazier, Founder &amp; Chief Executive of One World Labs" width="176" height="176" loading="eager"></span></span></span>
+        <button class="portrait-btn" id="photoBtn" data-i-aria="ui_photo_open" aria-label="View photo full screen">
+          <span class="ring"><span class="ring-in"><span class="ring-clip"><img src="founder-lee.webp" data-i-alt="ui_photo_alt" alt="Lee Frazier, Founder &amp; Chief Executive of One World Labs" width="176" height="176" loading="eager"></span></span></span>
         </button>
         <h1>Lee Frazier</h1>
         <p class="role" data-i="role">Founder &amp; Chief Executive</p>
@@ -313,27 +313,27 @@
             <div class="panel" id="contactPanel">
               <div class="panel-in">
                 <div class="actions">
-                  <a class="act" href="mailto:lee@oneworldlabs.ai" aria-label="Email Lee">
+                  <a class="act" href="mailto:lee@oneworldlabs.ai" data-i-aria="ui_email" aria-label="Email Lee">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     <span data-i="a_email">Email</span>
                   </a>
-                  <a class="act" href="tel:+17705521868" aria-label="Call Lee's cell">
+                  <a class="act" href="tel:+17705521868" data-i-aria="ui_call" aria-label="Call Lee's cell">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     <span data-i="a_call">Call</span>
                   </a>
-                  <a class="act" href="sms:+17705521868" aria-label="Text Lee">
+                  <a class="act" href="sms:+17705521868" data-i-aria="ui_text" aria-label="Text Lee">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     <span data-i="a_text">Text</span>
                   </a>
-                  <a class="act" href="https://wa.me/17705521868" target="_blank" rel="noopener" aria-label="WhatsApp Lee">
+                  <a class="act" href="https://wa.me/17705521868" target="_blank" rel="noopener" data-i-aria="ui_whatsapp" aria-label="WhatsApp Lee">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
                     <span>WhatsApp</span>
                   </a>
-                  <a class="act" href="tel:+18557700200" aria-label="Call the One World Labs office">
+                  <a class="act" href="tel:+18557700200" data-i-aria="ui_office" aria-label="Call the One World Labs office">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M2 22h20"/><path d="M10 6h1"/><path d="M13 6h1"/><path d="M10 10h1"/><path d="M13 10h1"/><path d="M10 14h1"/><path d="M13 14h1"/><path d="M10 18h4"/></svg>
                     <span data-i="a_office">Office</span>
                   </a>
-                  <a class="act" href="https://instagram.com/frazierstrong" target="_blank" rel="noopener" aria-label="Lee on Instagram">
+                  <a class="act" href="https://instagram.com/frazierstrong" target="_blank" rel="noopener" data-i-aria="ui_instagram" aria-label="Lee on Instagram">
                     <svg viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                     <span>Instagram</span>
                   </a>
@@ -361,7 +361,7 @@
             <div class="panel" id="owlPanel">
               <div class="panel-in">
                   <p class="carlabel" data-i="catalog_title">Eight apps</p>
-                  <div class="car-wrap"><div class="car" aria-label="One World Labs apps">
+                  <div class="car-wrap"><div class="car" data-i-aria="ui_apps" aria-label="One World Labs apps">
                     <a class="app" style="--h:var(--hue-job)" href="https://www.oneworldlabs.ai/apps/onejob/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 13h16"/></svg></span><span class="n">OneJob</span><span class="s" data-i="d_job">Get hired, get paid</span></a>
                     <a class="app" style="--h:var(--hue-score)" href="https://www.oneworldlabs.ai/apps/onescore/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6.5v5c0 4.6 3.3 8.5 8 9.5 4.7-1 8-4.9 8-9.5v-5z"/><path d="m8.6 12 2.3 2.3 4.5-4.6"/></svg></span><span class="n">OneScore</span><span class="s" data-i="d_score">Credibility you own</span></a>
                     <a class="app" style="--h:var(--hue-event)" href="https://www.oneworldlabs.ai/apps/oneevent/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 14v3"/></svg></span><span class="n">OneEvent</span><span class="s" data-i="d_event">Events and tickets</span></a>
@@ -371,8 +371,8 @@
                     <a class="app" style="--h:#D97706" href="https://www.oneworldlabs.ai/apps/onebusiness/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h2m4 0h2M8 11h2m4 0h2M10 21v-6h4v6"/></svg></span><span class="n">OneBusiness</span><span class="s" data-i="d_business">Your business in one place</span></a>
                     <a class="app soon" style="--h:#2563EB" href="https://www.oneworldlabs.ai/apps/onepay/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h3"/></svg></span><span class="n">OnePay</span><span class="s" data-i="d_soon">Coming soon</span></a>
                   </div></div>
-                  <p class="carlabel">Services we run for you</p>
-                  <div class="car-wrap"><div class="car" aria-label="One World Labs services">
+                  <p class="carlabel" data-i="services_title">Services we run for you</p>
+                  <div class="car-wrap"><div class="car" data-i-aria="ui_services" aria-label="One World Labs services">
                     <a class="app" style="--h:var(--hue-voice)" href="https://www.oneworldlabs.ai/services/#onevoice"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3Z"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M9 21h6"/></svg></span><span class="n">OneVoice</span><span class="s" data-i="d_voice">AI receptionist</span></a>
                     <a class="app" style="--h:var(--hue-page)" href="https://www.oneworldlabs.ai/services/#onepage"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 8.5h18"/><path d="M6.5 12h6M6.5 15.5h9"/></svg></span><span class="n">OnePage</span><span class="s" data-i="d_page">AI websites</span></a>
                     <a class="app soon" style="--h:var(--hue-app)" href="https://www.oneworldlabs.ai/services/#oneapp"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5.5h3"/><path d="M12 18.2h.01"/></svg></span><span class="n">OneApp</span><span class="s" data-i="d_soon2">Coming soon</span></a>
@@ -388,17 +388,17 @@
                   </a>
 
                   <div class="stores">
-                    <span class="store-badge" role="img" aria-label="Download on the App Store — coming soon">
-                      <svg width="24" height="28" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="sb-lines"><span class="sb-top">Download on the</span><span class="sb-bottom">App Store</span></span>
+                    <span class="store-badge" role="img" data-i-aria="ui_store_apple" aria-label="Download on the App Store — coming soon">
+                      <svg width="24" height="28" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="sb-lines"><span class="sb-top" data-i="store_download">Download on the</span><span class="sb-bottom">App Store</span></span>
                     </span>
-                    <span class="store-badge" role="img" aria-label="Get it on Google Play — coming soon">
-                      <svg width="22" height="25" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D7FE" d="M48 32c-6 5.5-10 14-10 25v398c0 11 4 19.5 10 25l3 2.8L294 240v-6L51 29.2 48 32z"/><path fill="#FFC900" d="M375 321l-81-81v-6l81-81 1.8 1L473 208c27 15.3 27 40.4 0 55.8l-96.2 54.2-1.8 3z"/><path fill="#FF3A44" d="M376.8 318L294 237 48 480c9 9.5 23.8 10.7 40.5 1.2L376.8 318z"/><path fill="#00F076" d="M376.8 156L88.5 30.8C71.8 21.3 57 22.5 48 32l246 205 82.8-81z"/></svg><span class="sb-lines"><span class="sb-top">GET IT ON</span><span class="sb-bottom">Google Play</span></span>
+                    <span class="store-badge" role="img" data-i-aria="ui_store_google" aria-label="Get it on Google Play — coming soon">
+                      <svg width="22" height="25" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D7FE" d="M48 32c-6 5.5-10 14-10 25v398c0 11 4 19.5 10 25l3 2.8L294 240v-6L51 29.2 48 32z"/><path fill="#FFC900" d="M375 321l-81-81v-6l81-81 1.8 1L473 208c27 15.3 27 40.4 0 55.8l-96.2 54.2-1.8 3z"/><path fill="#FF3A44" d="M376.8 318L294 237 48 480c9 9.5 23.8 10.7 40.5 1.2L376.8 318z"/><path fill="#00F076" d="M376.8 156L88.5 30.8C71.8 21.3 57 22.5 48 32l246 205 82.8-81z"/></svg><span class="sb-lines"><span class="sb-top" data-i="store_get">Get it on</span><span class="sb-bottom">Google Play</span></span>
                     </span>
                   </div>
                   <p class="stores-note" data-i="stores_note">Mobile apps are coming soon. The five available apps work in your browser; OneSocial, OneAgent and OnePay are still in development.</p>
 
                 <p class="gift"><span data-i="gift_line">Founder discount — 30 days of free VIP subscription service</span><br>
-                <span class="code" id="giftCode" role="button" tabindex="0" aria-label="Copy founder discount code">FOUNDER0001</span></p>
+                <span class="code" id="giftCode" role="button" tabindex="0" data-i-aria="ui_copy" aria-label="Copy founder discount code">FOUNDER0001</span></p>
               </div>
             </div>
           </div>
@@ -416,9 +416,9 @@
     </div>
   </main>
 
-  <div class="modal" id="photoModal" role="dialog" aria-modal="true" aria-label="Photo of Lee Frazier">
+  <div class="modal" id="photoModal" role="dialog" aria-modal="true" data-i-aria="ui_photo" aria-label="Photo of Lee Frazier">
     <img src="founder-lee-full.jpg" alt="Lee Frazier">
-    <button class="x" id="modalClose" aria-label="Close photo">&times;</button>
+    <button class="x" id="modalClose" data-i-aria="ui_photo_close" aria-label="Close photo">&times;</button>
   </div>
 
 <script>
@@ -453,6 +453,8 @@
   /* Scoped founder catalog labels; CO and ES use the existing Spanish dictionary. */
   var catalogCopy={"en":{"catalog_title":"Eight apps","d_home":"Rent or buy a home","d_business":"Your business in one place","site_s":"The company — what we build and who it is for","stores_note":"Mobile apps are coming soon. The five available apps work in your browser; OneSocial, OneAgent and OnePay are still in development.","site_t":"oneworldlabs.ai"},"es":{"catalog_title":"Ocho aplicaciones","d_home":"Alquila o compra una vivienda","d_business":"Tu negocio en un solo lugar","site_s":"La empresa: qué creamos y para quién","stores_note":"Las apps móviles llegarán pronto. Las cinco apps disponibles funcionan en tu navegador; OneSocial, OneAgent y OnePay siguen en desarrollo.","site_t":"oneworldlabs.ai"},"de":{"catalog_title":"Acht Apps","d_home":"Ein Zuhause mieten oder kaufen","d_business":"Ihr Unternehmen an einem Ort","site_s":"Das Unternehmen — was wir entwickeln und für wen","stores_note":"Mobile Apps folgen bald. Die fünf verfügbaren Apps funktionieren im Browser; OneSocial, OneAgent und OnePay sind noch in Entwicklung.","site_t":"oneworldlabs.ai"},"ru":{"catalog_title":"Восемь приложений","d_home":"Арендуйте или купите жильё","d_business":"Ваш бизнес в одном месте","site_s":"Компания — что мы создаём и для кого","stores_note":"Мобильные приложения скоро появятся. Пять доступных приложений работают в браузере; OneSocial, OneAgent и OnePay ещё в разработке.","site_t":"oneworldlabs.ai"},"zh":{"catalog_title":"八款应用","d_home":"租房或买房","d_business":"一站式管理您的业务","site_s":"公司介绍——我们开发什么，为谁服务","stores_note":"移动应用即将推出。五款已上线的应用可在浏览器中使用；OneSocial、OneAgent 和 OnePay 仍在开发中。","site_t":"oneworldlabs.ai"},"pt":{"catalog_title":"Oito aplicativos","d_home":"Alugue ou compre uma casa","d_business":"Seu negócio em um só lugar","site_s":"A empresa — o que criamos e para quem","stores_note":"Os aplicativos móveis chegam em breve. Os cinco apps disponíveis funcionam no navegador; OneSocial, OneAgent e OnePay ainda estão em desenvolvimento.","site_t":"oneworldlabs.ai"}};
   Object.keys(catalogCopy).forEach(function(lang){Object.assign(D[lang],catalogCopy[lang]);});
+  var interfaceCopy={"en":{"services_title":"Services we run for you","store_download":"Download on the","store_get":"Get it on","ui_theme":"Toggle light and dark mode","ui_language":"Change language","ui_languages":"Languages","ui_photo_open":"View photo full screen","ui_photo_alt":"Lee Frazier, Founder & Chief Executive of One World Labs","ui_email":"Email Lee","ui_call":"Call Lee’s cell","ui_text":"Text Lee","ui_whatsapp":"Message Lee on WhatsApp","ui_office":"Call the One World Labs office","ui_instagram":"Lee on Instagram","ui_apps":"One World Labs apps","ui_services":"One World Labs services","ui_store_apple":"Download on the App Store — coming soon","ui_store_google":"Get it on Google Play — coming soon","ui_copy":"Copy founder discount code","ui_photo":"Photo of Lee Frazier","ui_photo_close":"Close photo"},"es":{"services_title":"Servicios que gestionamos para ti","store_download":"Descargar en","store_get":"Disponible en","ui_theme":"Cambiar entre modo claro y oscuro","ui_language":"Cambiar idioma","ui_languages":"Idiomas","ui_photo_open":"Ver foto en pantalla completa","ui_photo_alt":"Lee Frazier, fundador y director ejecutivo de One World Labs","ui_email":"Enviar correo a Lee","ui_call":"Llamar al celular de Lee","ui_text":"Enviar mensaje de texto a Lee","ui_whatsapp":"Enviar mensaje a Lee por WhatsApp","ui_office":"Llamar a la oficina de One World Labs","ui_instagram":"Lee en Instagram","ui_apps":"Aplicaciones de One World Labs","ui_services":"Servicios de One World Labs","ui_store_apple":"Descargar en App Store — próximamente","ui_store_google":"Disponible en Google Play — próximamente","ui_copy":"Copiar código de descuento del fundador","ui_photo":"Foto de Lee Frazier","ui_photo_close":"Cerrar foto"},"de":{"services_title":"Services, die wir für Sie betreiben","store_download":"Laden im","store_get":"Jetzt bei","ui_theme":"Zwischen hellem und dunklem Modus wechseln","ui_language":"Sprache ändern","ui_languages":"Sprachen","ui_photo_open":"Foto im Vollbild anzeigen","ui_photo_alt":"Lee Frazier, Gründer und Geschäftsführer von One World Labs","ui_email":"E-Mail an Lee senden","ui_call":"Lee mobil anrufen","ui_text":"SMS an Lee senden","ui_whatsapp":"Lee auf WhatsApp schreiben","ui_office":"Büro von One World Labs anrufen","ui_instagram":"Lee auf Instagram","ui_apps":"Apps von One World Labs","ui_services":"Services von One World Labs","ui_store_apple":"Im App Store laden — bald verfügbar","ui_store_google":"Bei Google Play — bald verfügbar","ui_copy":"Gründer-Rabattcode kopieren","ui_photo":"Foto von Lee Frazier","ui_photo_close":"Foto schließen"},"ru":{"services_title":"Услуги, которые мы предоставляем","store_download":"Загрузить в","store_get":"Доступно в","ui_theme":"Переключить светлую и тёмную тему","ui_language":"Изменить язык","ui_languages":"Языки","ui_photo_open":"Открыть фото на весь экран","ui_photo_alt":"Ли Фрейзер, основатель и генеральный директор One World Labs","ui_email":"Написать Ли по электронной почте","ui_call":"Позвонить Ли на мобильный","ui_text":"Отправить Ли SMS","ui_whatsapp":"Написать Ли в WhatsApp","ui_office":"Позвонить в офис One World Labs","ui_instagram":"Ли в Instagram","ui_apps":"Приложения One World Labs","ui_services":"Услуги One World Labs","ui_store_apple":"Загрузить в App Store — скоро","ui_store_google":"Доступно в Google Play — скоро","ui_copy":"Скопировать код скидки основателя","ui_photo":"Фото Ли Фрейзера","ui_photo_close":"Закрыть фото"},"zh":{"services_title":"我们为您提供的服务","store_download":"下载于","store_get":"获取于","ui_theme":"切换浅色和深色模式","ui_language":"更改语言","ui_languages":"语言","ui_photo_open":"全屏查看照片","ui_photo_alt":"Lee Frazier，One World Labs 创始人兼首席执行官","ui_email":"给 Lee 发邮件","ui_call":"拨打 Lee 的手机","ui_text":"给 Lee 发短信","ui_whatsapp":"通过 WhatsApp 联系 Lee","ui_office":"致电 One World Labs 办公室","ui_instagram":"Lee 的 Instagram","ui_apps":"One World Labs 应用","ui_services":"One World Labs 服务","ui_store_apple":"在 App Store 下载——即将推出","ui_store_google":"在 Google Play 获取——即将推出","ui_copy":"复制创始人优惠码","ui_photo":"Lee Frazier 的照片","ui_photo_close":"关闭照片"},"pt":{"services_title":"Serviços que gerenciamos para você","store_download":"Baixar na","store_get":"Disponível no","ui_theme":"Alternar entre modo claro e escuro","ui_language":"Mudar idioma","ui_languages":"Idiomas","ui_photo_open":"Ver foto em tela cheia","ui_photo_alt":"Lee Frazier, fundador e diretor executivo da One World Labs","ui_email":"Enviar e-mail para Lee","ui_call":"Ligar para o celular de Lee","ui_text":"Enviar SMS para Lee","ui_whatsapp":"Enviar mensagem para Lee no WhatsApp","ui_office":"Ligar para o escritório da One World Labs","ui_instagram":"Lee no Instagram","ui_apps":"Aplicativos da One World Labs","ui_services":"Serviços da One World Labs","ui_store_apple":"Baixar na App Store — em breve","ui_store_google":"Disponível no Google Play — em breve","ui_copy":"Copiar código de desconto do fundador","ui_photo":"Foto de Lee Frazier","ui_photo_close":"Fechar foto"}};
+  Object.keys(interfaceCopy).forEach(function(lang){Object.assign(D[lang],interfaceCopy[lang]);});
   var curLang='en', curFlag='us';
   try{curLang=localStorage.getItem('owl_lang')||'en';curFlag=localStorage.getItem('owl_flag')||'us';}catch(e){}
   if(!D[curLang])curLang='en';
@@ -460,6 +462,9 @@
     var d=D[curLang]||D.en;
     var els=document.querySelectorAll('[data-i]');
     for(var i=0;i<els.length;i++){var k=els[i].getAttribute('data-i');if(d[k])els[i].textContent=d[k];}
+    [['data-i-aria','aria-label'],['data-i-alt','alt']].forEach(function(pair){
+      document.querySelectorAll('['+pair[0]+']').forEach(function(el){var key=el.getAttribute(pair[0]);if(d[key])el.setAttribute(pair[1],d[key]);});
+    });
     document.documentElement.lang=curLang;
     document.getElementById('langBtnFlag').innerHTML=FLAGS[curFlag]||FLAGS.us;
     document.documentElement.style.visibility='';
