@@ -465,12 +465,12 @@
     [['data-i-aria','aria-label'],['data-i-alt','alt']].forEach(function(pair){
       document.querySelectorAll('['+pair[0]+']').forEach(function(el){var key=el.getAttribute(pair[0]);if(d[key])el.setAttribute(pair[1],d[key]);});
     });
-    // Only the eight app-information destinations carry this display-language hint.
+    // Only founder public marketing destinations carry this display-language hint.
     var handoffLocale = curLang === 'es' ? (curFlag === 'co' ? 'co' : 'es') : curLang;
     var appPaths = ["/apps/onejob/","/apps/onescore/","/apps/oneevent/","/apps/onesocial/","/apps/onehome/","/apps/oneagent/","/apps/onebusiness/","/apps/onepay/"];
-    document.querySelectorAll('#owlPanel a[href]').forEach(function(link){
+    document.querySelectorAll('#owlPanel a[href], .center > a.pill[href]').forEach(function(link){
       var url = new URL(link.href);
-      if(url.origin === 'https://www.oneworldlabs.ai' && appPaths.indexOf(url.pathname) !== -1){
+      if(url.origin === 'https://www.oneworldlabs.ai' && (appPaths.indexOf(url.pathname) !== -1 || url.pathname === '/' || (url.pathname === '/services/' && ['#onevoice','#onepage','#oneapp'].indexOf(url.hash) !== -1))){
         url.searchParams.set('owl_lang',handoffLocale); link.href=url.href;
       }
     });
