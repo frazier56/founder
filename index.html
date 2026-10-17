@@ -1,570 +1,337 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Lee Frazier — One World Labs</title>
-<meta name="description" content="Personal contact page for Lee Frazier, Founder & Chief Executive of One World Labs, Inc. Call, text, WhatsApp, email, or save my details to your phone.">
+<meta name="description" content="Personal contact page for Lee Frazier, Founder &amp; Chief Executive of One World Labs, Inc. Call, text, WhatsApp, email, or save my details to your phone.">
 <link rel="canonical" href="https://founder.oneworldlabs.ai/">
-<link rel="icon" href="https://www.oneworldlabs.ai/favicon.ico">
+<link rel="icon" type="image/png" href="https://www.oneworldlabs.ai/icon-192.png">
+<link rel="apple-touch-icon" href="https://www.oneworldlabs.ai/apple-touch-icon.png">
+<meta property="og:type" content="profile">
 <meta property="og:title" content="Lee Frazier — One World Labs">
-<meta property="og:description" content="Founder & Chief Executive, One World Labs, Inc.">
+<meta property="og:description" content="Founder &amp; Chief Executive, One World Labs, Inc.">
 <meta property="og:url" content="https://founder.oneworldlabs.ai/">
 <meta property="og:image" content="https://founder.oneworldlabs.ai/founder-lee.webp">
-<meta name="theme-color" content="#07070a">
-<script>
-/* FOUC guard: theme + language before first paint, with failsafe (kit lesson B3) */
-(function(){try{
-  var t=localStorage.getItem('owl_theme'); if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}
-  var l=localStorage.getItem('owl_lang')||'en';
-  if(l!=='en'){document.documentElement.style.visibility='hidden';
-    setTimeout(function(){document.documentElement.style.visibility='';},600);}
-}catch(e){}})();
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Lee Frazier","jobTitle":"Founder & Chief Executive","worksFor":{"@type":"Organization","name":"One World Labs, Inc.","url":"https://oneworldlabs.ai"},"email":"mailto:lee@oneworldlabs.ai","telephone":"+1 855 770 0200","url":"https://founder.oneworldlabs.ai/","image":"https://founder.oneworldlabs.ai/founder-lee.webp"}
-</script>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#EFEDF4">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --amber:#8B7FF0; --gold:#15C2B2; --teal:#15C2B2; --ink:#EAF0FA; --muted:#d1d5db; --dim:#9aa3b2;
-    --blur:32px;
-    --card-fill:linear-gradient(180deg, rgba(255,255,255,.30), rgba(255,255,255,.02) 16%),linear-gradient(160deg, rgba(255,255,255,.17), rgba(255,255,255,.06) 60%, rgba(255,255,255,.10));
-    --card-border:rgba(255,255,255,.30);
-    --card-shadow:0 12px 40px rgba(4,8,20,.45), inset 0 1px 0 rgba(255,255,255,.28), inset 0 -1px 0 rgba(255,255,255,.06);
-    --panel-line:rgba(255,255,255,.14);
-    --menu-bg:rgba(13,17,27,.97); --menu-border:rgba(255,255,255,.18);
-    --code-bg:rgba(0,0,0,.35); --code-border:rgba(21,194,178,.45); --code-ink:#8EEDE2;
-    --hue-voice:#2C6FE8; --hue-page:#E2483D; --hue-job:#16A34A; --hue-score:#7C3AED;
-    --hue-event:#DB2777; --hue-home:#0D9488; --hue-social:#0891B2; --hue-agent:#B91C1C; --hue-app:#C42B86;
-  }
-  html[data-theme="light"]{
-    --amber:#5C56C4; --gold:#0E7A72; --ink:#2C2622; --muted:#4c463f; --dim:#6b655c;
-    --card-fill:linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.25) 16%),linear-gradient(160deg, rgba(255,255,255,.60), rgba(255,255,255,.34));
-    --card-border:rgba(30,35,50,.15);
-    --card-shadow:0 12px 34px rgba(50,55,80,.16), inset 0 1px 0 rgba(255,255,255,.9);
-    --panel-line:rgba(30,35,50,.12);
-    --menu-bg:rgba(255,255,255,.98); --menu-border:rgba(30,35,50,.15);
-    --code-bg:rgba(0,0,0,.05); --code-border:rgba(14,122,114,.5); --code-ink:#0E7A72;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{overflow-x:clip}
-  body{
-    overflow-x:clip;max-width:100vw;min-height:100vh;position:relative;
-    background:linear-gradient(196deg,#0A0F1C 0%,#0B0B1D 52%,#0C0B1E 100%);
-    font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);
-    -webkit-font-smoothing:antialiased;transition:background .3s;
-  }
-  html[data-theme="light"] body{background:linear-gradient(196deg,#EAF0FB 0%,#EDEBFA 52%,#EEEDFB 100%)}
-  img,svg{max-width:100%}
-  .wrap>*{min-width:0}
-  /* ---- ambient field ---- */
-  .field{position:fixed;inset:0;z-index:0;pointer-events:none}
+:root{--bg:#EFEDF4;--card:#ffffff;--ink:#1C1826;--ink2:#55506A;--ink3:#8F88A6;--line:rgba(28,24,38,.07);
+ --chip:#F1EEF8;--shadow:0 6px 20px rgba(60,40,110,.06);--grid:#F7F5FA}
+body.dark{--bg:#0B0F1A;--card:#131228;--ink:#F3F1F8;--ink2:#AFA9C4;--ink3:#847DA0;
+ --line:rgba(255,255,255,.09);--chip:rgba(255,255,255,.09);--shadow:0 10px 30px rgba(0,0,0,.4);--grid:rgba(255,255,255,.04)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:var(--bg);color:var(--ink);
+ transition:background .3s,color .3s}
+a{text-decoration:none;color:inherit} button{font:inherit;border:0;background:none;color:inherit;cursor:pointer}
+.wrap{max-width:430px;margin:0 auto;padding:0 20px 46px}
+.sh{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 
-  /* ---- the woven field, matching the rest of the site ----------------------
-     Same 3px thread, violet at 45%, that Lee picked in the background round.
-     It goes on its own layer rather than a ::after on .field, because .field's
-     pseudo-elements are already carrying the blobs' blur. No animation: a 1px
-     thread drifting sub-pixel reads as screen flicker. */
-  .weave{position:absolute;inset:0;pointer-events:none;opacity:.72;
-    background:
-      repeating-linear-gradient(90deg,
-        rgba(150,142,255,.07) 0 1px,transparent 1px 3px,
-        rgba(46,107,230,.15) 3px 4px,transparent 4px 6px,
-        rgba(21,194,178,.14) 6px 7px,transparent 7px 9px),
-      repeating-linear-gradient(0deg,
-        rgba(46,107,230,.15) 0 1px,transparent 1px 3px,
-        rgba(21,194,178,.14) 3px 4px,transparent 4px 6px,
-        rgba(150,142,255,.07) 6px 7px,transparent 7px 9px);}
-  html[data-theme="light"] .weave{background:
-      repeating-linear-gradient(90deg,
-        rgba(92,86,196,.072) 0 1px,transparent 1px 3px,
-        rgba(46,107,230,.16) 3px 4px,transparent 4px 6px,
-        rgba(21,194,178,.15) 6px 7px,transparent 7px 9px),
-      repeating-linear-gradient(0deg,
-        rgba(46,107,230,.16) 0 1px,transparent 1px 3px,
-        rgba(21,194,178,.15) 3px 4px,transparent 4px 6px,
-        rgba(92,86,196,.072) 6px 7px,transparent 7px 9px);}
-  .blob{position:absolute;border-radius:50%;will-change:transform}
-  .b1{top:6%;right:2%;width:42rem;height:42rem;background:linear-gradient(135deg,rgba(46,107,230,.30),rgba(46,107,230,.14));filter:blur(190px);opacity:.95}
-  .b2{bottom:3%;left:2%;width:38rem;height:38rem;background:linear-gradient(135deg,rgba(110,74,220,.28),rgba(92,86,196,.16));filter:blur(170px);opacity:.9}
-  .b3{top:38%;left:24%;width:34rem;height:34rem;background:linear-gradient(135deg,rgba(21,194,178,.13),rgba(46,107,230,.13));filter:blur(150px);opacity:.7}
-  .b4{top:16%;left:56%;width:28rem;height:28rem;background:linear-gradient(135deg,rgba(92,86,196,.18),rgba(46,107,230,.16));filter:blur(140px);opacity:.65}
-  .core{position:absolute;inset:0;background:radial-gradient(58% 46% at 50% 44%, rgba(120,120,235,.13), rgba(96,165,250,.06) 45%, transparent 72%)}
-  .veil{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.38),transparent 30%,transparent 72%,rgba(0,0,0,.28))}
-  html[data-theme="light"] .blob{opacity:.45}
-  html[data-theme="light"] .core{background:radial-gradient(58% 46% at 50% 44%, rgba(110,100,225,.11), transparent 70%)}
-  html[data-theme="light"] .veil{background:linear-gradient(to top,rgba(255,255,255,.5),transparent 30%,transparent 75%,rgba(255,255,255,.4))}
-  /* ---- top-right controls: theme toggle, then flag (rightmost) ---- */
-  .topbar{position:fixed;top:14px;right:clamp(14px,3vw,26px);display:flex;gap:10px;z-index:40}
-  .ctrl{width:42px;height:42px;border-radius:12px;border:1px solid var(--card-border);cursor:pointer;
-    background:var(--card-fill);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);
-    display:flex;align-items:center;justify-content:center;color:var(--ink);transition:transform .2s}
-  .ctrl:hover{transform:scale(1.06)}
-  .ctrl svg{width:20px;height:20px}
-  .ctrl .flag-svg{width:22px;height:15px;border-radius:2px;overflow:hidden;display:block}
-  html[data-theme="light"] .sun{display:none}
-  html:not([data-theme="light"]) .moon{display:none}
-  /* language menu — near-opaque (kit lesson A2), fixed, never inside frosted ancestors (A1) */
-  .langmenu{display:none;position:fixed;top:64px;right:clamp(14px,3vw,26px);z-index:50;width:220px;
-    background:var(--menu-bg);border:1px solid var(--menu-border);border-radius:14px;padding:6px;
-    box-shadow:0 18px 40px rgba(0,0,0,.35)}
-  .langmenu.show{display:block;animation:fadein .2s ease both}
-  .langrow{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border:0;background:none;border-radius:9px;cursor:pointer;color:var(--ink);font-family:inherit;font-size:14px;text-align:left}
-  .langrow:hover{background:rgba(127,127,160,.14)}
-  .langrow .flag-svg{width:22px;height:15px;border-radius:2px;flex:0 0 auto}
-  .langrow .tick{margin-left:auto;color:var(--teal);opacity:0;font-weight:700}
-  .langrow.active .tick{opacity:1}
-  /* ---- layout ---- */
-  .page{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:72px 0 48px}
-  .wrap{max-width:56rem;margin:0 auto;padding:0 clamp(16px,4.6vw,26px);width:100%}
-  .center{text-align:center}
-  .portrait-btn{background:none;border:0;cursor:pointer;transition:transform .3s;border-radius:9999px}
-  .portrait-btn:hover{transform:scale(1.05)}
-  .ring{display:block;width:9rem;height:9rem;border-radius:9999px;padding:4px;margin:0 auto 32px;
-    background:linear-gradient(45deg,#15C2B2,#12A8CE,#2C6FE8,#5C56C4,#7C3AED,#8B7FF0,#15C2B2);
-    box-shadow:0 25px 50px -12px rgba(92,86,196,.30)}
-  .ring-in{display:block;width:100%;height:100%;border-radius:9999px;padding:4px;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
-  .ring-clip{display:block;width:100%;height:100%;border-radius:9999px;overflow:hidden}
-  .ring img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-  h1{color:var(--amber);font-size:20px;font-weight:600;letter-spacing:.01em}
-  .role{color:var(--ink);font-size:14px;margin-top:8px}
-  .org{color:var(--dim);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin-top:10px}
-  .rule{width:44px;height:2px;margin:14px auto 0;background:linear-gradient(90deg,#15C2B2,#2C6FE8);border-radius:2px}
-  .intro{max-width:42rem;margin:24px auto 40px;color:var(--muted);font-style:italic;line-height:1.65;font-size:16px}
-  /* ---- cards ---- */
-  .grid{max-width:48rem;margin:0 auto 40px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
-  @media(min-width:768px){.grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
-  .tile{display:flex;flex-direction:column;transition:opacity .5s ease,transform .5s ease}
-  .tile .glass{flex:1;display:flex;flex-direction:column}
-  .tile.dim{opacity:.4;transform:scale(.95)}
-  .tile.open{grid-column:1/-1}
-  .tile:not(.open):not(.dim):hover{transform:scale(1.02)}
-  .glass{background:var(--card-fill);border:1px solid var(--card-border);border-radius:24px;overflow:hidden;
-    backdrop-filter:blur(var(--blur)) saturate(1.6);-webkit-backdrop-filter:blur(var(--blur)) saturate(1.6);
-    box-shadow:var(--card-shadow)}
-  .face{width:100%;padding:26px 24px;background:none;border:0;cursor:pointer;color:var(--ink);font-family:inherit;border-radius:24px}
-  .face h2{font-size:20px;font-weight:600;color:var(--ink)}
-  .badge{width:58px;height:58px;margin:0 auto 14px;border-radius:9999px;position:relative;display:flex;align-items:center;justify-content:center;
-    background:conic-gradient(from 210deg,#15C2B2,#2C6FE8,#7C4DE8,#15C2B2);padding:2px;transition:transform .3s}
-  .badge-in{width:100%;height:100%;border-radius:9999px;display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.05) 40%),rgba(10,14,24,.55);
-    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-  .face:hover .badge{transform:scale(1.08)}
-  .face .sub{font-size:12px;color:var(--dim);margin-top:6px}
-  .owl-logo{height:58px;width:auto;display:block;margin:0 auto 14px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.5));transition:transform .3s}
-  html[data-theme="light"] .owl-logo{filter:drop-shadow(0 2px 6px rgba(0,0,0,.18))}
-  .face:hover .owl-logo{transform:scale(1.08)}
-  /* ---- panels ---- */
-  .panel{display:none;padding:0 clamp(14px,3.4vw,28px) 28px}
-  .panel.show{display:block;animation:fadein .3s ease both}
-  @keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-  .panel-in{border-top:1px solid var(--panel-line);padding-top:22px}
-  .actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-  @media(min-width:640px){.actions{grid-template-columns:repeat(6,minmax(0,1fr))}}
-  a.act{display:flex;flex-direction:column;align-items:center;padding:12px 4px;text-decoration:none;transition:transform .3s;border-radius:12px;min-height:44px}
-  a.act:hover{transform:scale(1.05)}
-  a.act svg{width:24px;height:24px;margin-bottom:8px;transition:transform .3s}
-  a.act:hover svg{transform:scale(1.1)}
-  a.act span{font-size:12px;color:var(--muted);transition:color .2s;white-space:nowrap}
-  a.act:hover span{color:var(--ink)}
-  /* save-to-contacts, redesigned to live INSIDE the Contact Me panel */
-  .save-in{max-width:24rem;margin:20px auto 0;text-align:center}
-  a.save{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:13px 20px;border-radius:14px;
-    text-decoration:none;color:#fff;font-weight:600;font-size:15px;
-    background:linear-gradient(180deg,rgba(255,255,255,.48),rgba(255,255,255,.10) 34%,rgba(255,255,255,0) 52%),linear-gradient(160deg,#17BFAD,#0FA396 55%,#0A7A70);
-    border:1px solid rgba(255,255,255,.28);
-    box-shadow:0 10px 24px rgba(6,48,44,.45), inset 0 1px 0 rgba(255,255,255,.45), inset 0 -2px 6px rgba(0,0,0,.18);
-    transition:transform .25s}
-  a.save:hover{transform:translateY(-1px) scale(1.02)}
-  .save-note{font-size:12px;color:var(--dim);margin-top:10px}
-  /* ---- app carousel ---- */
-  /* Group labels — the switcher was eight undifferentiated tiles with the three SERVICES mixed
-     in among the apps. Lee: "we need to show all six apps in that setup, and modernise those
-     options." Two labelled groups is the ecosystem's real shape and does the modernising at the
-     same time: you can now tell at a glance what is an app you open and what is something we run. */
-  .carlabel{margin:2px 0 -2px;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--dim);text-align:center}
-  .car-wrap{position:relative}
+/* ---- hero ---- */
+.band{position:sticky;top:0;z-index:1;height:338px;overflow:hidden}
+.band>img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.band::after{content:"";position:absolute;inset:0;pointer-events:none;
+ background:linear-gradient(to top,rgba(12,9,22,.94) 0%,rgba(12,9,22,.55) 40%,rgba(12,9,22,.10) 100%)}
+.tools{position:absolute;right:16px;top:calc(env(safe-area-inset-top) + 14px);z-index:4;display:flex;gap:8px}
+.tools button{display:flex;align-items:center;gap:6px;height:34px;padding:0 11px;border-radius:999px;color:#fff;
+ background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(10px);
+ font-size:12px;font-weight:700}
+.tools .flag{font-size:13px;line-height:1}
+.tools svg{width:16px;height:16px}
+.bandtxt{position:absolute;left:20px;right:20px;bottom:42px;z-index:2;color:#fff}
+.bandtxt h1{font-size:32px;font-weight:700;letter-spacing:-.8px;line-height:1.04}
+.bandtxt .role{font-size:13.5px;font-weight:600;color:#E2DCF0;margin-top:9px;line-height:1.35}
+.bandtxt .org{font-size:13.5px;font-weight:600;color:#A79DC4;margin-top:2px;line-height:1.35}
 
-  /* ---- the company's website: a wide row, not a tenth square ---- */
-  .site-row{display:flex;align-items:center;gap:12px;width:100%;margin-top:14px;padding:12px 14px;
-    border-radius:16px;text-decoration:none;
-    background:linear-gradient(180deg,rgba(255,255,255,.30),rgba(255,255,255,.05) 40%),rgba(255,255,255,.06);
-    border:1px solid var(--card-border);box-shadow:inset 0 1px 0 rgba(255,255,255,.30);
-    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-    transition:transform .18s cubic-bezier(.2,.8,.3,1)}
-  html[data-theme="light"] .site-row{background:linear-gradient(180deg,rgba(255,255,255,.85),rgba(255,255,255,.45))}
-  .site-row:active{transform:scale(.985)}
-  .site-row:hover{transform:translateY(-1px)}
-  .site-row img{width:34px;height:34px;object-fit:contain;flex:0 0 auto}
-  .site-row .sr-t{display:block;font-size:13px;font-weight:800;color:var(--ink);line-height:1.2}
-  .site-row .sr-s{display:block;margin-top:2px;font-size:10.5px;font-weight:600;color:var(--dim)}
-  .site-row .sr-go{margin-left:auto;flex:0 0 auto;color:var(--dim)}
+.sheet{background:var(--bg);border-radius:26px 26px 0 0;margin-top:-24px;position:relative;z-index:2;box-shadow:0 -14px 34px rgba(12,9,22,.28);padding:22px 0 0;transition:background .3s}
+.blurb{font-size:13.5px;line-height:1.55;color:var(--ink2);text-align:center;margin:0 auto;max-width:330px}
+.save{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin:20px 0 9px;border-radius:17px;
+ padding:17px;font-size:15.5px;font-weight:700;color:#fff;background:linear-gradient(135deg,#4B2E9E,#2A1E4A);
+ box-shadow:0 12px 26px rgba(60,35,135,.30)}
+.save svg{width:22px;height:22px}
+.save:active{transform:translateY(1px)}
+.savehint{text-align:center;font-size:11.5px;color:var(--ink3);margin-bottom:18px}
 
-  /* ---- store buttons: the SAME object as the one on the home page ----
-     Copied rather than re-designed on purpose. Somebody who sees the card and then the site
-     should meet the same button twice, not two designs of the same idea. They are inert until
-     the listings exist — a dead link on a business card is worse than an honest "coming soon". */
-  .stores{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}
-  .store-badge{display:inline-flex;align-items:center;gap:9px;height:48px;padding:0 16px 0 12px;border-radius:12px;
-    background:linear-gradient(180deg,#1b1b1f,#000);color:#fff;border:1px solid rgba(255,255,255,.28);
-    box-shadow:0 10px 24px -12px rgba(0,0,0,.55);text-decoration:none;transition:transform .18s ease;cursor:default}
-  .store-badge:hover{transform:translateY(-1px)}
-  .store-badge .sb-lines{display:flex;flex-direction:column;align-items:flex-start;line-height:1.12}
-  .store-badge .sb-top{font-size:9.5px;font-weight:500;letter-spacing:.02em;opacity:.92}
-  .store-badge .sb-bottom{font-size:15.5px;font-weight:600;letter-spacing:-.01em}
-  .stores-note{margin-top:9px;font-size:10.5px;line-height:1.4;color:var(--dim);text-align:center}
-  /* ---- app shelf (see the note at the top of build) ---- */
-  .car{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 6px;padding:12px 2px 14px}
-  a.app{width:100%;display:flex;flex-direction:column;align-items:center;gap:7px;
-    padding:0;text-decoration:none;background:none;border:0;box-shadow:none;
-    transition:transform .18s cubic-bezier(.2,.8,.3,1)}
-  a.app:active{transform:scale(.94)}
-  a.app:hover{transform:translateY(-2px)}
-  /* THE COLOUR LIVES HERE — full strength, nothing mixed toward white, identical in both
-     themes because it owes nothing to the page behind it. */
-  a.app .ic{position:relative;width:58px;height:58px;border-radius:17px;display:grid;place-items:center;
-    background:linear-gradient(150deg,var(--h) 0%,color-mix(in srgb,var(--h) 74%,#000) 100%);
-    box-shadow:0 6px 16px color-mix(in srgb,var(--h) 42%,transparent),
-               inset 0 1px 0 rgba(255,255,255,.42), inset 0 -2px 6px rgba(0,0,0,.20);
-    overflow:hidden}
-  /* the specular sweep an OS icon has — light source top-left, one highlight, no gloss sheet */
-  a.app .ic::after{content:"";position:absolute;inset:0;
-    background:linear-gradient(160deg,rgba(255,255,255,.34) 0%,rgba(255,255,255,.07) 38%,transparent 62%)}
-  a.app .ic svg{position:relative;z-index:1;width:27px;height:27px;stroke:#fff;fill:none;
-    stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;
-    filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.28))}
-  a.app .n{font-size:12.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink);line-height:1.15;text-align:center}
-  a.app .s{font-size:9.5px;font-weight:600;color:var(--dim);text-align:center;line-height:1.25;
-    text-shadow:none;white-space:normal;max-width:96px}
-  /* "Coming soon" is a state, not a colour — the tile keeps its brand hue and says so. */
-  a.app.soon .s{color:var(--gold);font-weight:800;letter-spacing:.02em}
-  .gift{margin-top:14px;text-align:center;font-size:12px;color:var(--dim);line-height:1.7}
-  .gift .code{display:inline-block;cursor:pointer;user-select:none;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.12em;
-    background:var(--code-bg);border:1px solid var(--code-border);border-radius:8px;padding:2px 9px;color:var(--code-ink);transition:border-color .2s}
-  .gift .code:hover{border-color:var(--code-ink)}
-  /* ---- tagline + pill ---- */
-  .tagline{color:var(--dim);font-size:14px;max-width:32rem;margin:0 auto 16px;line-height:1.7}
-  a.pill{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:9999px;text-decoration:none;
-    background:var(--card-fill);border:1px solid var(--card-border);
-    backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);
-    box-shadow:0 4px 18px rgba(4,8,20,.25), inset 0 1px 0 rgba(255,255,255,.22);transition:transform .3s}
-  a.pill:hover{transform:scale(1.05)}
-  a.pill svg{width:14px;height:14px}
-  a.pill span{font-size:14px;font-weight:500;color:var(--gold)}
-  /* ---- photo modal ---- */
-  .modal{display:none;position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.9);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:16px}
-  .modal.show{display:flex;animation:fadein .25s ease both}
-  .modal img{max-width:min(42rem,100%);max-height:90vh;object-fit:contain;border-radius:12px;box-shadow:0 25px 60px rgba(0,0,0,.6)}
-  .modal .x{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:9999px;border:0;cursor:pointer;background:rgba(0,0,0,.5);color:#fff;font-size:22px;line-height:1;transition:background .2s}
-  .modal .x:hover{background:rgba(0,0,0,.7)}
-  :focus-visible{outline:2px solid rgba(45,212,191,.8);outline-offset:2px}
-  @media(max-width:768px){:root{--blur:18px}}
-  @media(min-width:768px){.ring{width:11rem;height:11rem}}
-  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-</style>
-</head>
-<body>
-  <div class="field" aria-hidden="true">
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="blob b4"></div>
-    <div class="core"></div>
-    <div class="weave"></div>
-    <div class="veil"></div>
+/* ---- sections ---- */
+.sec{background:var(--card);border:1px solid var(--line);border-radius:22px;margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow);transition:background .3s}
+.sechead{display:flex;align-items:center;gap:11px;width:100%;padding:17px 16px;text-align:left}
+.lead{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;flex:0 0 auto;background:var(--chip);color:#6B35C9}
+body.dark .lead{color:#B48BFF}
+.sechead h2{font-size:15px;font-weight:800;letter-spacing:-.2px;flex:1}
+.lock{display:flex;align-items:center;gap:1px;flex:1}
+.lock img{width:26px;height:30px;object-fit:contain;display:block}
+.lock span{font-size:17px;font-weight:700;letter-spacing:-.3px;margin-left:-1px}
+.cnt{font-size:11px;font-weight:700;color:var(--ink3);margin-right:2px}
+.chev{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--chip);color:var(--ink2);
+ transition:transform .32s cubic-bezier(.4,1.3,.5,1);flex:0 0 auto}
+.chev svg{width:15px;height:15px}
+.sec.open .chev{transform:rotate(180deg)}
+.secbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .36s cubic-bezier(.4,0,.2,1)}
+.sec.open .secbody{grid-template-rows:1fr}
+.secinner{overflow:hidden;min-height:0}
+
+/* ---- reach me ---- */
+.reach{display:grid;grid-template-columns:repeat(3,1fr);gap:18px 4px;padding:8px 6px 24px}
+.ritem{display:flex;flex-direction:column;align-items:center;gap:8px;font-size:11.5px;font-weight:600;color:var(--ink2)}
+.ritem svg{width:30px;height:30px}
+.ritem:active{transform:scale(.94)}
+
+/* ---- one world grid ---- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px 4px;padding:8px 6px 22px}
+.gi{display:flex;flex-direction:column;align-items:center;gap:9px;font-size:11px;font-weight:700;color:var(--ink2);
+ will-change:transform}
+.gi svg{width:32px;height:32px;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.gi:active{transform:scale(.92)}
+.hint{text-align:center;font-size:11px;color:var(--ink3);padding:0 16px 18px;margin-top:-6px}
+
+/* ---- card overlay ---- */
+.ov{position:fixed;inset:0;z-index:60;background:rgba(8,6,16,.72);backdrop-filter:blur(7px);
+ display:none;align-items:center;opacity:0;transition:opacity .25s}
+.ov.on{display:flex;opacity:1}
+.rail{display:flex;gap:14px;width:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;
+ padding:0 calc(50vw - 134px);-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.ac{position:relative;flex:0 0 268px;max-width:76vw;aspect-ratio:3/4;scroll-snap-align:center;
+ border-radius:22px;overflow:hidden;background:#15102A;box-shadow:0 28px 60px rgba(0,0,0,.45);
+ transform:scale(.94);opacity:.55;transition:transform .3s,opacity .3s}
+.ac.cur{transform:scale(1);opacity:1}
+.ac video,.ac .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ac .ph{display:grid;place-items:center}
+.ac .ph svg{width:64px;height:64px;fill:none;stroke:#fff;stroke-width:1.4;opacity:.92}
+.eye{position:absolute;left:14px;top:13px;z-index:3;font-size:11px;font-weight:800;color:#fff;
+ letter-spacing:-.1px;text-shadow:0 1px 3px rgba(0,0,0,.75)}
+.acx{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;z-index:4;
+ background:rgba(10,8,18,.5);border:1px solid rgba(255,255,255,.26);backdrop-filter:blur(8px);
+ display:grid;place-items:center;color:#fff}
+.acx svg{width:15px;height:15px}
+.acb{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:62px 15px 15px;color:#14101F;
+ background:linear-gradient(to top,rgba(255,255,255,.97) 0%,rgba(255,255,255,.93) 46%,rgba(255,255,255,.72) 70%,rgba(255,255,255,0) 100%)}
+body.dark .acb{color:#F4F2FA;
+ background:linear-gradient(to top,rgba(18,16,28,.97) 0%,rgba(18,16,28,.92) 46%,rgba(18,16,28,.7) 70%,rgba(18,16,28,0) 100%)}
+.acb h3{font-size:19px;font-weight:700;letter-spacing:-.5px;line-height:1.12}
+.acb p{font-size:12.5px;line-height:1.45;margin-top:6px;color:rgba(20,16,31,.72)}
+body.dark .acb p{color:rgba(244,242,250,.76)}
+.acts{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:13px}
+.acts a{font-size:12px;font-weight:700}
+.acts .soon{font-size:11.5px;font-weight:700;opacity:.55}
+.ovdots{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom) + 26px);display:flex;justify-content:center;gap:5px}
+.ovdots i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.28);transition:.3s}
+.ovdots i.on{background:#fff;width:15px;border-radius:3px}
+
+.foot{display:block;text-align:center;margin-top:24px;font-size:12px;font-weight:700;color:var(--ink2)}
+.lb{position:fixed;inset:0;z-index:70;background:rgba(8,6,16,.96);display:none;place-items:center;padding:18px}
+.lb.on{display:grid}
+.lb img{max-width:100%;max-height:88vh;border-radius:18px}
+
+@keyframes penny{0%{transform:rotateY(0)}100%{transform:rotateY(360deg)}}
+.gi{perspective:420px}
+.gi .orb{display:block;transform-style:preserve-3d;animation:penny 7s cubic-bezier(.45,0,.55,1) infinite}
+@media (prefers-reduced-motion:reduce){.gi .orb{animation:none}}
+</style></head><body>
+
+<div class="band" id="hero">
+  <img src="https://founder.oneworldlabs.ai/founder-lee-full.jpg" alt="Lee Frazier">
+  <div class="tools">
+    <button id="lang"><span class="flag">🇺🇸</span><span id="langcode">EN</span></button>
+    <button id="theme" aria-label="Theme"><svg class="sh" viewBox="0 0 24 24" id="themeico"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg></button>
   </div>
+  <div class="bandtxt"><h1>Lee Frazier</h1>
+    <div class="role" data-k="role">Founder &amp; Chief Executive</div>
+    <div class="org" data-k="org">One World Labs, Inc.</div></div>
+</div>
 
-  <div class="topbar">
-    <button class="ctrl" id="themeBtn" data-i-aria="ui_theme" aria-label="Toggle light and dark mode">
-      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+<div class="sheet"><div class="wrap">
+  <p class="blurb" data-k="blurb">My personal contact page. Here to explore One World Labs, or to talk business — either way you're in the right place.</p>
+
+  <a class="save" id="save" href="#" download="lee-frazier.vcf"><svg class="sh" viewBox="0 0 24 24"><path d="M12 4v10"/><path d="m8 11 4 4 4-4"/><path d="M5 19h14"/></svg><span data-k="save">Save my contact</span></a>
+  <p class="savehint" data-k="savehint">Name, both numbers, email and website — straight to your phone.</p>
+
+  <section class="sec" id="s-reach">
+    <button class="sechead" data-sec="s-reach">
+      <span class="lead"><svg class="sh" style="width:17px;height:17px" viewBox="0 0 24 24"><path d="M7 3.8h3l1.4 4-1.9 1.4a12 12 0 0 0 5.3 5.3l1.4-1.9 4 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 6a2 2 0 0 1 2-2.2z"/></svg></span>
+      <h2 data-k="reach">Reach me</h2>
+      <span class="chev"><svg class="sh" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
     </button>
-    <button class="ctrl" id="langBtn" data-i-aria="ui_language" aria-label="Change language" aria-expanded="false"><span class="flag-svg" id="langBtnFlag"></span></button>
-  </div>
+    <div class="secbody"><div class="secinner"><div class="reach" id="reach"></div></div></div>
+  </section>
 
-  <div class="langmenu" id="langMenu" role="listbox" data-i-aria="ui_languages" aria-label="Languages"></div>
+  <section class="sec" id="s-ow">
+    <button class="sechead" data-sec="s-ow">
+      <span class="lock"><img src="https://www.oneworldlabs.ai/assets/mark-oneworld.png" alt="One World"><span>ne World</span></span>
+      <span class="cnt" data-k="apps">12 apps</span>
+      <span class="chev"><svg class="sh" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></span>
+    </button>
+    <div class="secbody"><div class="secinner">
+      <div class="grid" id="grid"></div>
+      <p class="hint" data-k="hint">Tap any app to see what it does.</p>
+    </div></div>
+  </section>
 
-  <main class="page">
-    <div class="wrap">
+  <a class="foot" href="https://www.oneworldlabs.ai/">oneworldlabs.ai</a>
+</div></div>
 
-      <div class="center">
-        <button class="portrait-btn" id="photoBtn" data-i-aria="ui_photo_open" aria-label="View photo full screen">
-          <span class="ring"><span class="ring-in"><span class="ring-clip"><img src="founder-lee.webp" data-i-alt="ui_photo_alt" alt="Lee Frazier, Founder &amp; Chief Executive of One World Labs" width="176" height="176" loading="eager"></span></span></span>
-        </button>
-        <h1>Lee Frazier</h1>
-        <p class="role" data-i="role">Founder &amp; Chief Executive</p>
-        <div class="rule" aria-hidden="true"></div>
-        <p class="org">One World Labs, Inc.</p>
-        <p class="intro" data-i="intro">This is my personal contact page. Whether you're here to explore One World Labs or talk business, you're in the right place.</p>
-      </div>
-
-      <div class="grid">
-        <!-- Contact Me — FIRST, with Save-to-contacts inside (Lee, 14 Aug) -->
-        <div class="tile" id="contactTile">
-          <div class="glass">
-            <button class="face" id="contactToggle" aria-expanded="false" aria-controls="contactPanel">
-              <span class="badge"><span class="badge-in">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#EAF0FA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </span></span>
-              <h2 data-i="c_title">Contact Me</h2>
-              <p class="sub" data-i="c_sub">Call · Text · WhatsApp · Email</p>
-            </button>
-            <div class="panel" id="contactPanel">
-              <div class="panel-in">
-                <div class="actions">
-                  <a class="act" href="mailto:lee@oneworldlabs.ai" data-i-aria="ui_email" aria-label="Email Lee">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                    <span data-i="a_email">Email</span>
-                  </a>
-                  <a class="act" href="tel:+17705521868" data-i-aria="ui_call" aria-label="Call Lee's cell">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    <span data-i="a_call">Call</span>
-                  </a>
-                  <a class="act" href="sms:+17705521868" data-i-aria="ui_text" aria-label="Text Lee">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                    <span data-i="a_text">Text</span>
-                  </a>
-                  <a class="act" href="https://wa.me/17705521868" target="_blank" rel="noopener" data-i-aria="ui_whatsapp" aria-label="WhatsApp Lee">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-                    <span>WhatsApp</span>
-                  </a>
-                  <a class="act" href="tel:+18557700200" data-i-aria="ui_office" aria-label="Call the One World Labs office">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M2 22h20"/><path d="M10 6h1"/><path d="M13 6h1"/><path d="M10 10h1"/><path d="M13 10h1"/><path d="M10 14h1"/><path d="M13 14h1"/><path d="M10 18h4"/></svg>
-                    <span data-i="a_office">Office</span>
-                  </a>
-                  <a class="act" href="https://instagram.com/frazierstrong" target="_blank" rel="noopener" data-i-aria="ui_instagram" aria-label="Lee on Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                    <span>Instagram</span>
-                  </a>
-                </div>
-                <div class="save-in">
-                  <a class="save" href="lee.vcf" download="Lee-Frazier.vcf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                    <span data-i="save">Save to my contacts</span>
-                  </a>
-                  <p class="save-note" data-i="save_note">Adds my name, both numbers, email and website to your phone.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- One World Labs — second (Lee, 14 Aug: Contact Me leads) -->
-        <div class="tile" id="owlTile">
-          <div class="glass">
-            <button class="face" id="owlToggle" aria-expanded="false" aria-controls="owlPanel" aria-label="One World Labs">
-              <img class="owl-logo" src="owl-logo.png" alt="" width="49" height="58">
-              <h2>One World Labs</h2>
-              <p class="sub" data-i="owl_sub">One login. Every app.</p>
-            </button>
-            <div class="panel" id="owlPanel">
-              <div class="panel-in">
-                  <p class="carlabel" data-i="catalog_title">Eight apps</p>
-                  <div class="car-wrap"><div class="car" data-i-aria="ui_apps" aria-label="One World Labs apps">
-                    <a class="app" style="--h:var(--hue-job)" href="https://www.oneworldlabs.ai/apps/onejob/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 8V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 13h16"/></svg></span><span class="n">OneJob</span><span class="s" data-i="d_job">Get hired, get paid</span></a>
-                    <a class="app soon" style="--h:var(--hue-score)" href="https://www.oneworldlabs.ai/apps/onescore/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6.5v5c0 4.6 3.3 8.5 8 9.5 4.7-1 8-4.9 8-9.5v-5z"/><path d="m8.6 12 2.3 2.3 4.5-4.6"/></svg></span><span class="n">OneScore</span><span class="s" data-i="d_soon">Coming soon</span></a>
-                    <a class="app" style="--h:var(--hue-event)" href="https://www.oneworldlabs.ai/apps/oneevent/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M12 14v3"/></svg></span><span class="n">OneEvent</span><span class="s" data-i="d_event">Events and tickets</span></a>
-                    <a class="app soon" style="--h:var(--hue-social)" href="https://www.oneworldlabs.ai/apps/onesocial/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3"/><circle cx="5.5" cy="17" r="2.6"/><circle cx="18.5" cy="17" r="2.6"/><path d="m9.7 9.3-2 5M14.3 9.3l2 5M8.1 17h7.8"/></svg></span><span class="n">OneSocial</span><span class="s" data-i="d_soon">Coming soon</span></a>
-                    <a class="app" style="--h:var(--hue-home)" href="https://www.oneworldlabs.ai/apps/onehome/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10.5 9-7 9 7"/><path d="M5.5 9.4V20h13V9.4"/><path d="M10 20v-5.2h4V20"/></svg></span><span class="n">OneHome</span><span class="s" data-i="d_home">Rent or buy a home</span></a>
-                    <a class="app soon" style="--h:var(--hue-agent)" href="https://www.oneworldlabs.ai/apps/oneagent/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4Z"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/><path d="m18 5 1.6-1.6M20 9h2"/></svg></span><span class="n">OneAgent</span><span class="s" data-i="d_soon">Coming soon</span></a>
-                    <a class="app soon" style="--h:#D97706" href="https://www.oneworldlabs.ai/apps/onebusiness/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h2m4 0h2M8 11h2m4 0h2M10 21v-6h4v6"/></svg></span><span class="n">OneBusiness</span><span class="s" data-i="d_soon">Coming soon</span></a>
-                    <a class="app soon" style="--h:#2563EB" href="https://www.oneworldlabs.ai/apps/onepay/"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h3"/></svg></span><span class="n">OnePay</span><span class="s" data-i="d_soon">Coming soon</span></a>
-                  </div></div>
-                  <p class="carlabel" data-i="services_title">Services we run for you</p>
-                  <div class="car-wrap"><div class="car" data-i-aria="ui_services" aria-label="One World Labs services">
-                    <a class="app" style="--h:var(--hue-voice)" href="https://www.oneworldlabs.ai/services/#onevoice"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a3 3 0 0 1 3 3v5a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3Z"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21M9 21h6"/></svg></span><span class="n">OneVoice</span><span class="s" data-i="d_voice">AI receptionist</span></a>
-                    <a class="app" style="--h:var(--hue-page)" href="https://www.oneworldlabs.ai/services/#onepage"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 8.5h18"/><path d="M6.5 12h6M6.5 15.5h9"/></svg></span><span class="n">OnePage</span><span class="s" data-i="d_page">AI websites</span></a>
-                    <a class="app soon" style="--h:var(--hue-app)" href="https://www.oneworldlabs.ai/services/#oneapp"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M10.5 5.5h3"/><path d="M12 18.2h.01"/></svg></span><span class="n">OneApp</span><span class="s" data-i="d_soon2">Coming soon</span></a>
-                  </div></div>
-
-                  <a class="site-row" href="https://www.oneworldlabs.ai/">
-                    <img src="owl-logo.png" alt="" width="34" height="34">
-                    <span>
-                      <span class="sr-t" data-i="site_t">oneworldlabs.ai</span>
-                      <span class="sr-s" data-i="site_s">The company — what we build and who it is for</span>
-                    </span>
-                    <svg class="sr-go" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
-                  </a>
-
-                  <div class="stores">
-                    <span class="store-badge" role="img" data-i-aria="ui_store_apple" aria-label="Download on the App Store — coming soon">
-                      <svg width="24" height="28" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.7-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg><span class="sb-lines"><span class="sb-top" data-i="store_download">Download on the</span><span class="sb-bottom">App Store</span></span>
-                    </span>
-                    <span class="store-badge" role="img" data-i-aria="ui_store_google" aria-label="Get it on Google Play — coming soon">
-                      <svg width="22" height="25" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D7FE" d="M48 32c-6 5.5-10 14-10 25v398c0 11 4 19.5 10 25l3 2.8L294 240v-6L51 29.2 48 32z"/><path fill="#FFC900" d="M375 321l-81-81v-6l81-81 1.8 1L473 208c27 15.3 27 40.4 0 55.8l-96.2 54.2-1.8 3z"/><path fill="#FF3A44" d="M376.8 318L294 237 48 480c9 9.5 23.8 10.7 40.5 1.2L376.8 318z"/><path fill="#00F076" d="M376.8 156L88.5 30.8C71.8 21.3 57 22.5 48 32l246 205 82.8-81z"/></svg><span class="sb-lines"><span class="sb-top" data-i="store_get">Get it on</span><span class="sb-bottom">Google Play</span></span>
-                    </span>
-                  </div>
-                  <p class="stores-note" data-i="stores_note">Mobile apps are coming soon. OneHome, OneJob and OneEvent work in your browser today; the other five apps are coming soon.</p>
-
-                <p class="gift"><span data-i="gift_line">Founder discount — 30 days of free VIP subscription service</span><br>
-                <span class="code" id="giftCode" role="button" tabindex="0" data-i-aria="ui_copy" aria-label="Copy founder discount code">FOUNDER0001</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="center">
-        <p class="tagline" data-i="tagline">The new credibility standard for the digital world</p>
-        <a class="pill" href="https://www.oneworldlabs.ai/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#15C2B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-          <span>oneworldlabs.ai</span>
-        </a>
-      </div>
-
-    </div>
-  </main>
-
-  <div class="modal" id="photoModal" role="dialog" aria-modal="true" data-i-aria="ui_photo" aria-label="Photo of Lee Frazier">
-    <img src="founder-lee-full.jpg" alt="Lee Frazier">
-    <button class="x" id="modalClose" data-i-aria="ui_photo_close" aria-label="Close photo">&times;</button>
-  </div>
+<div class="ov" id="ov"><div class="rail" id="rail"></div><div class="ovdots" id="ovdots"></div></div>
+<div class="lb" id="lb"><img src="https://founder.oneworldlabs.ai/founder-lee-full.jpg" alt="Lee Frazier"></div>
 
 <script>
-(function(){
-  /* ============ i18n — 6 languages, 7 flags, inline SVG (Windows-safe) ============ */
-  var FLAGS={
-    us:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="15" fill="#fff"/><g fill="#B22234"><rect width="22" height="2.14"/><rect y="4.28" width="22" height="2.14"/><rect y="8.57" width="22" height="2.14"/><rect y="12.85" width="22" height="2.15"/></g><rect width="9.4" height="8.57" fill="#3C3B6E"/></svg>',
-    co:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="7.5" fill="#FCD116"/><rect y="7.5" width="22" height="3.75" fill="#003893"/><rect y="11.25" width="22" height="3.75" fill="#CE1126"/></svg>',
-    es:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="15" fill="#AA151B"/><rect y="3.75" width="22" height="7.5" fill="#F1BF00"/></svg>',
-    de:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="5" fill="#000"/><rect y="5" width="22" height="5" fill="#DD0000"/><rect y="10" width="22" height="5" fill="#FFCE00"/></svg>',
-    ru:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="5" fill="#fff"/><rect y="5" width="22" height="5" fill="#0039A6"/><rect y="10" width="22" height="5" fill="#D52B1E"/></svg>',
-    cn:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="15" fill="#DE2910"/><path d="M4 2.5 4.9 5.2 2.6 3.5h2.8L3.1 5.2z" fill="#FFDE00"/></svg>',
-    br:'<svg class="flag-svg" viewBox="0 0 22 15"><rect width="22" height="15" fill="#009C3B"/><path d="M11 1.8 20 7.5 11 13.2 2 7.5z" fill="#FFDF00"/><circle cx="11" cy="7.5" r="2.6" fill="#002776"/></svg>'
-  };
-  var LANGS=[
-    {c:'us',l:'en',n:'English'},
-    {c:'co',l:'es',n:'Español (CO)'},
-    {c:'es',l:'es',n:'Español'},
-    {c:'de',l:'de',n:'Deutsch'},
-    {c:'ru',l:'ru',n:'Русский'},
-    {c:'cn',l:'zh',n:'中文'},
-    {c:'br',l:'pt',n:'Português'}
-  ];
-  var D={
-   en:{role:"Founder & Chief Executive",intro:"This is my personal contact page. Whether you're here to explore One World Labs or talk business, you're in the right place.",c_title:"Contact Me",c_sub:"Call · Text · WhatsApp · Email",a_email:"Email",a_call:"Call",a_text:"Text",a_office:"Office",owl_sub:"One login. Every app.",d_voice:"AI receptionist",d_page:"AI websites",d_job:"Monetize",d_score:"Credibility",d_event:"Tickets",d_social:"All your socials, one place",d_soon:"Coming soon",d_soon2:"Coming soon",gift_line:"Founder discount — 30 days of free VIP subscription service",save:"Save to my contacts",save_note:"Adds my name, both numbers, email and website to your phone.",tagline:"The new credibility standard for the digital world",copied:"Copied ✓"},
-   es:{role:"Fundador y Director Ejecutivo",intro:"Esta es mi página de contacto personal. Ya sea que vengas a conocer One World Labs o a hablar de negocios, estás en el lugar correcto.",c_title:"Contáctame",c_sub:"Llamar · Mensaje · WhatsApp · Correo",a_email:"Correo",a_call:"Llamar",a_text:"Mensaje",a_office:"Oficina",owl_sub:"Un acceso. Todas las apps.",d_voice:"Recepcionista IA",d_page:"Webs con IA",d_job:"Monetiza",d_score:"Credibilidad",d_event:"Entradas",d_social:"Tus redes en un solo lugar",d_soon:"Muy pronto",d_soon2:"Muy pronto",gift_line:"Descuento del fundador: 30 días de suscripción VIP gratis",save:"Guardar en mis contactos",save_note:"Añade mi nombre, ambos números, correo y web a tu teléfono.",tagline:"El nuevo estándar de credibilidad para el mundo digital",copied:"Copiado ✓"},
-   de:{role:"Gründer & Geschäftsführer",intro:"Dies ist meine persönliche Kontaktseite. Ob Sie One World Labs entdecken oder über Geschäfte sprechen möchten – hier sind Sie richtig.",c_title:"Kontakt",c_sub:"Anruf · SMS · WhatsApp · E-Mail",a_email:"E-Mail",a_call:"Anrufen",a_text:"SMS",a_office:"Büro",owl_sub:"Ein Login. Alle Apps.",d_voice:"KI-Rezeption",d_page:"KI-Websites",d_job:"Monetarisieren",d_score:"Glaubwürdigkeit",d_event:"Tickets",d_social:"Alle Netzwerke an einem Ort",d_soon:"Bald verfügbar",d_soon2:"Bald verfügbar",gift_line:"Gründer-Rabatt – 30 Tage VIP-Abo gratis",save:"Als Kontakt speichern",save_note:"Speichert Name, beide Nummern, E-Mail und Website auf Ihrem Telefon.",tagline:"Der neue Glaubwürdigkeitsstandard für die digitale Welt",copied:"Kopiert ✓"},
-   ru:{role:"Основатель и генеральный директор",intro:"Это моя личная страница контактов. Хотите узнать о One World Labs или обсудить дела — вы по адресу.",c_title:"Связаться со мной",c_sub:"Звонок · SMS · WhatsApp · Почта",a_email:"Почта",a_call:"Позвонить",a_text:"SMS",a_office:"Офис",owl_sub:"Один вход. Все приложения.",d_voice:"ИИ-секретарь",d_page:"ИИ-сайты",d_job:"Монетизация",d_score:"Репутация",d_event:"Билеты",d_social:"Все соцсети в одном месте",d_soon:"Скоро",d_soon2:"Скоро",gift_line:"Скидка основателя — 30 дней VIP-подписки бесплатно",save:"Сохранить в контакты",save_note:"Добавит имя, оба номера, почту и сайт в ваш телефон.",tagline:"Новый стандарт доверия в цифровом мире",copied:"Скопировано ✓"},
-   zh:{role:"创始人兼首席执行官",intro:"这是我的个人联系页面。无论您是想了解 One World Labs 还是洽谈合作，来这里就对了。",c_title:"联系我",c_sub:"电话 · 短信 · WhatsApp · 邮件",a_email:"邮件",a_call:"致电",a_text:"短信",a_office:"办公室",owl_sub:"一个账号，畅用所有应用。",d_voice:"AI 接待员",d_page:"AI 网站",d_job:"变现",d_score:"信誉",d_event:"票务",d_social:"所有社交账号，一处管理",d_soon:"即将推出",d_soon2:"即将推出",gift_line:"创始人优惠 — 免费 30 天 VIP 订阅",save:"保存到通讯录",save_note:"将我的姓名、两个号码、邮箱和网站保存到您的手机。",tagline:"数字世界的全新信誉标准",copied:"已复制 ✓"},
-   pt:{role:"Fundador e Diretor Executivo",intro:"Esta é a minha página de contato pessoal. Seja para conhecer a One World Labs ou falar de negócios, você está no lugar certo.",c_title:"Fale comigo",c_sub:"Ligar · SMS · WhatsApp · E-mail",a_email:"E-mail",a_call:"Ligar",a_text:"SMS",a_office:"Escritório",owl_sub:"Um login. Todos os apps.",d_voice:"Recepcionista de IA",d_page:"Sites com IA",d_job:"Monetize",d_score:"Credibilidade",d_event:"Ingressos",d_social:"Suas redes em um só lugar",d_soon:"Em breve",d_soon2:"Em breve",gift_line:"Desconto do fundador — 30 dias de assinatura VIP grátis",save:"Salvar nos meus contatos",save_note:"Adiciona meu nome, os dois números, e-mail e site ao seu telefone.",tagline:"O novo padrão de credibilidade para o mundo digital",copied:"Copiado ✓"}
-  };
-  /* Scoped founder catalog labels; CO and ES use the existing Spanish dictionary. */
-  var catalogCopy={"en":{"catalog_title":"Eight apps","d_home":"Rent or buy a home","d_business":"Your business in one place","site_s":"The company — what we build and who it is for","stores_note":"Mobile apps are coming soon. The five available apps work in your browser; OneSocial, OneAgent and OnePay are still in development.","site_t":"oneworldlabs.ai"},"es":{"catalog_title":"Ocho aplicaciones","d_home":"Alquila o compra una vivienda","d_business":"Tu negocio en un solo lugar","site_s":"La empresa: qué creamos y para quién","stores_note":"Las apps móviles llegarán pronto. Las cinco apps disponibles funcionan en tu navegador; OneSocial, OneAgent y OnePay siguen en desarrollo.","site_t":"oneworldlabs.ai"},"de":{"catalog_title":"Acht Apps","d_home":"Ein Zuhause mieten oder kaufen","d_business":"Ihr Unternehmen an einem Ort","site_s":"Das Unternehmen — was wir entwickeln und für wen","stores_note":"Mobile Apps folgen bald. Die fünf verfügbaren Apps funktionieren im Browser; OneSocial, OneAgent und OnePay sind noch in Entwicklung.","site_t":"oneworldlabs.ai"},"ru":{"catalog_title":"Восемь приложений","d_home":"Арендуйте или купите жильё","d_business":"Ваш бизнес в одном месте","site_s":"Компания — что мы создаём и для кого","stores_note":"Мобильные приложения скоро появятся. Пять доступных приложений работают в браузере; OneSocial, OneAgent и OnePay ещё в разработке.","site_t":"oneworldlabs.ai"},"zh":{"catalog_title":"八款应用","d_home":"租房或买房","d_business":"一站式管理您的业务","site_s":"公司介绍——我们开发什么，为谁服务","stores_note":"移动应用即将推出。五款已上线的应用可在浏览器中使用；OneSocial、OneAgent 和 OnePay 仍在开发中。","site_t":"oneworldlabs.ai"},"pt":{"catalog_title":"Oito aplicativos","d_home":"Alugue ou compre uma casa","d_business":"Seu negócio em um só lugar","site_s":"A empresa — o que criamos e para quem","stores_note":"Os aplicativos móveis chegam em breve. Os cinco apps disponíveis funcionam no navegador; OneSocial, OneAgent e OnePay ainda estão em desenvolvimento.","site_t":"oneworldlabs.ai"}};
-  /* Public launch status: only OneHome, OneJob and OneEvent are open. */
-  var availabilityNote={
-    en:"Mobile apps are coming soon. OneHome, OneJob and OneEvent work in your browser today; the other five apps are coming soon.",
-    es:"Las apps móviles llegarán pronto. OneHome, OneJob y OneEvent funcionan hoy en tu navegador; las otras cinco apps llegarán próximamente.",
-    de:"Mobile Apps folgen bald. OneHome, OneJob und OneEvent funktionieren heute im Browser; die anderen fünf Apps folgen bald.",
-    ru:"Мобильные приложения скоро появятся. OneHome, OneJob и OneEvent уже работают в браузере; остальные пять приложений появятся позже.",
-    zh:"移动应用即将推出。OneHome、OneJob 和 OneEvent 现已可在浏览器中使用；其余五款应用即将推出。",
-    pt:"Os aplicativos móveis chegam em breve. OneHome, OneJob e OneEvent já funcionam no navegador; os outros cinco apps chegam em breve."
-  };
-  Object.keys(catalogCopy).forEach(function(lang){Object.assign(D[lang],catalogCopy[lang],{stores_note:availabilityNote[lang]});});
-  var interfaceCopy={"en":{"services_title":"Services we run for you","store_download":"Download on the","store_get":"Get it on","ui_theme":"Toggle light and dark mode","ui_language":"Change language","ui_languages":"Languages","ui_photo_open":"View photo full screen","ui_photo_alt":"Lee Frazier, Founder & Chief Executive of One World Labs","ui_email":"Email Lee","ui_call":"Call Lee’s cell","ui_text":"Text Lee","ui_whatsapp":"Message Lee on WhatsApp","ui_office":"Call the One World Labs office","ui_instagram":"Lee on Instagram","ui_apps":"One World Labs apps","ui_services":"One World Labs services","ui_store_apple":"Download on the App Store — coming soon","ui_store_google":"Get it on Google Play — coming soon","ui_copy":"Copy founder discount code","ui_photo":"Photo of Lee Frazier","ui_photo_close":"Close photo"},"es":{"services_title":"Servicios que gestionamos para ti","store_download":"Descargar en","store_get":"Disponible en","ui_theme":"Cambiar entre modo claro y oscuro","ui_language":"Cambiar idioma","ui_languages":"Idiomas","ui_photo_open":"Ver foto en pantalla completa","ui_photo_alt":"Lee Frazier, fundador y director ejecutivo de One World Labs","ui_email":"Enviar correo a Lee","ui_call":"Llamar al celular de Lee","ui_text":"Enviar mensaje de texto a Lee","ui_whatsapp":"Enviar mensaje a Lee por WhatsApp","ui_office":"Llamar a la oficina de One World Labs","ui_instagram":"Lee en Instagram","ui_apps":"Aplicaciones de One World Labs","ui_services":"Servicios de One World Labs","ui_store_apple":"Descargar en App Store — próximamente","ui_store_google":"Disponible en Google Play — próximamente","ui_copy":"Copiar código de descuento del fundador","ui_photo":"Foto de Lee Frazier","ui_photo_close":"Cerrar foto"},"de":{"services_title":"Services, die wir für Sie betreiben","store_download":"Laden im","store_get":"Jetzt bei","ui_theme":"Zwischen hellem und dunklem Modus wechseln","ui_language":"Sprache ändern","ui_languages":"Sprachen","ui_photo_open":"Foto im Vollbild anzeigen","ui_photo_alt":"Lee Frazier, Gründer und Geschäftsführer von One World Labs","ui_email":"E-Mail an Lee senden","ui_call":"Lee mobil anrufen","ui_text":"SMS an Lee senden","ui_whatsapp":"Lee auf WhatsApp schreiben","ui_office":"Büro von One World Labs anrufen","ui_instagram":"Lee auf Instagram","ui_apps":"Apps von One World Labs","ui_services":"Services von One World Labs","ui_store_apple":"Im App Store laden — bald verfügbar","ui_store_google":"Bei Google Play — bald verfügbar","ui_copy":"Gründer-Rabattcode kopieren","ui_photo":"Foto von Lee Frazier","ui_photo_close":"Foto schließen"},"ru":{"services_title":"Услуги, которые мы предоставляем","store_download":"Загрузить в","store_get":"Доступно в","ui_theme":"Переключить светлую и тёмную тему","ui_language":"Изменить язык","ui_languages":"Языки","ui_photo_open":"Открыть фото на весь экран","ui_photo_alt":"Ли Фрейзер, основатель и генеральный директор One World Labs","ui_email":"Написать Ли по электронной почте","ui_call":"Позвонить Ли на мобильный","ui_text":"Отправить Ли SMS","ui_whatsapp":"Написать Ли в WhatsApp","ui_office":"Позвонить в офис One World Labs","ui_instagram":"Ли в Instagram","ui_apps":"Приложения One World Labs","ui_services":"Услуги One World Labs","ui_store_apple":"Загрузить в App Store — скоро","ui_store_google":"Доступно в Google Play — скоро","ui_copy":"Скопировать код скидки основателя","ui_photo":"Фото Ли Фрейзера","ui_photo_close":"Закрыть фото"},"zh":{"services_title":"我们为您提供的服务","store_download":"下载于","store_get":"获取于","ui_theme":"切换浅色和深色模式","ui_language":"更改语言","ui_languages":"语言","ui_photo_open":"全屏查看照片","ui_photo_alt":"Lee Frazier，One World Labs 创始人兼首席执行官","ui_email":"给 Lee 发邮件","ui_call":"拨打 Lee 的手机","ui_text":"给 Lee 发短信","ui_whatsapp":"通过 WhatsApp 联系 Lee","ui_office":"致电 One World Labs 办公室","ui_instagram":"Lee 的 Instagram","ui_apps":"One World Labs 应用","ui_services":"One World Labs 服务","ui_store_apple":"在 App Store 下载——即将推出","ui_store_google":"在 Google Play 获取——即将推出","ui_copy":"复制创始人优惠码","ui_photo":"Lee Frazier 的照片","ui_photo_close":"关闭照片"},"pt":{"services_title":"Serviços que gerenciamos para você","store_download":"Baixar na","store_get":"Disponível no","ui_theme":"Alternar entre modo claro e escuro","ui_language":"Mudar idioma","ui_languages":"Idiomas","ui_photo_open":"Ver foto em tela cheia","ui_photo_alt":"Lee Frazier, fundador e diretor executivo da One World Labs","ui_email":"Enviar e-mail para Lee","ui_call":"Ligar para o celular de Lee","ui_text":"Enviar SMS para Lee","ui_whatsapp":"Enviar mensagem para Lee no WhatsApp","ui_office":"Ligar para o escritório da One World Labs","ui_instagram":"Lee no Instagram","ui_apps":"Aplicativos da One World Labs","ui_services":"Serviços da One World Labs","ui_store_apple":"Baixar na App Store — em breve","ui_store_google":"Disponível no Google Play — em breve","ui_copy":"Copiar código de desconto do fundador","ui_photo":"Foto de Lee Frazier","ui_photo_close":"Fechar foto"}};
-  Object.keys(interfaceCopy).forEach(function(lang){Object.assign(D[lang],interfaceCopy[lang]);});
-  var curLang='en', curFlag='us';
-  try{curLang=localStorage.getItem('owl_lang')||'en';curFlag=localStorage.getItem('owl_flag')||'us';}catch(e){}
-  if(!D[curLang])curLang='en';
-  function applyLang(){
-    var d=D[curLang]||D.en;
-    var els=document.querySelectorAll('[data-i]');
-    for(var i=0;i<els.length;i++){var k=els[i].getAttribute('data-i');if(d[k])els[i].textContent=d[k];}
-    [['data-i-aria','aria-label'],['data-i-alt','alt']].forEach(function(pair){
-      document.querySelectorAll('['+pair[0]+']').forEach(function(el){var key=el.getAttribute(pair[0]);if(d[key])el.setAttribute(pair[1],d[key]);});
-    });
-    // Only founder public marketing destinations carry this display-language hint.
-    var handoffLocale = curLang === 'es' ? (curFlag === 'co' ? 'co' : 'es') : curLang;
-    var appPaths = ["/apps/onejob/","/apps/onescore/","/apps/oneevent/","/apps/onesocial/","/apps/onehome/","/apps/oneagent/","/apps/onebusiness/","/apps/onepay/"];
-    document.querySelectorAll('#owlPanel a[href], .center > a.pill[href]').forEach(function(link){
-      var url = new URL(link.href);
-      if(url.origin === 'https://www.oneworldlabs.ai' && (appPaths.indexOf(url.pathname) !== -1 || url.pathname === '/' || (url.pathname === '/services/' && ['#onevoice','#onepage','#oneapp'].indexOf(url.hash) !== -1))){
-        url.searchParams.set('owl_lang',handoffLocale); link.href=url.href;
-      }
-    });
-    document.documentElement.lang=curLang;
-    document.getElementById('langBtnFlag').innerHTML=FLAGS[curFlag]||FLAGS.us;
-    document.documentElement.style.visibility='';
-  }
-  /* build the menu (fixed, body-level — never inside a frosted ancestor: kit lesson A1) */
-  var menu=document.getElementById('langMenu');
-  LANGS.forEach(function(o){
-    var b=document.createElement('button');b.className='langrow';b.setAttribute('role','option');
-    b.innerHTML=FLAGS[o.c]+'<span>'+o.n+'</span><span class="tick">✓</span>';
-    b.addEventListener('click',function(){
-      curLang=o.l;curFlag=o.c;
-      try{localStorage.setItem('owl_lang',o.l);localStorage.setItem('owl_flag',o.c);}catch(e){}
-      applyLang();markActive();closeMenu();
-    });
-    b.dataset.flag=o.c;menu.appendChild(b);
+/* Order per Lee's app-launch rule: live first, then coming soon, then the agency products. */
+const APPS=[
+ ["OneEvent","#E2711D","ticket","event","03","Make your next great plan.","Discover local events or bring your community together with your own.","https://www.oneworldlabs.ai/apps/oneevent/","https://app.oneworldlabs.ai/events"],
+ ["OneJob","#17A45C","briefcase","job","01","Find your next opportunity.","Find work, hire talent and manage the details of your next job.","https://www.oneworldlabs.ai/apps/onejob/","https://app.oneworldlabs.ai/jobs"],
+ ["OneHome","#0D9488","home","home","02","Find a place to call home.","Explore homes to rent or buy and connect with the people behind them.","https://www.oneworldlabs.ai/apps/onehome/","https://app.oneworldlabs.ai/home"],
+ ["OneSocial","#8B3DEA","users","social","04","Connect your world.","Bring your professional presence and social activity together.","https://www.oneworldlabs.ai/apps/onesocial/",""],
+ ["OneScore","#E0A21F","gauge","onescore","05","Let your work speak for you.","Bring work, credentials and reviews into one professional reputation profile.","https://www.oneworldlabs.ai/apps/onescore/",""],
+ ["OnePay","#F3765C","card","","07","Move money with the work.","Pay and get paid inside the job, the home and the event you are already in.","https://www.oneworldlabs.ai/apps/onepay/",""],
+ ["OneAgent","#7B2D3B","badge","","08","People who represent you.","Work with an agent who carries your listings, your clients and your reputation.","https://www.oneworldlabs.ai/apps/oneagent/",""],
+ ["OneBusiness","#1F4E79","building","onebusiness","06","Keep your business together.","Find your services, leads and results in one workspace.","https://www.oneworldlabs.ai/apps/onebusiness/",""],
+ ["OneRide","#111111","car","","09","Get where you are going.","Book a ride, or drive and earn, with the same One ID you already use.","",""],
+ ["OneVoice","#2E6BE6","phone","","10","Never miss a call again.","AI reception that answers, qualifies and books while you work.","https://www.oneworldlabs.ai/services/#onevoice",""],
+ ["OnePage","#D6338B","layout","","11","A website that works for you.","A modern site built and kept current for your business.","https://www.oneworldlabs.ai/services/#onepage",""],
+ ["OneApp","#8E2F6B","sparkle","","12","Your own app, built for you.","Your brand in your customers' pocket, built on the One World stack.","https://www.oneworldlabs.ai/services/#oneapp",""],
+];
+
+const ICON = {
+  briefcase:'<rect x="3" y="7" width="18" height="13" rx="2.5"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/><path d="M3 12h18"/>',
+  home:'<path d="M3.1 11.3 12 4.2l8.9 7.1"/><path d="M5.7 10.7V19a1 1 0 0 0 1 1h10.6a1 1 0 0 0 1-1v-8.3"/><path d="M9.7 20v-4.5a2.3 2.3 0 0 1 4.6 0V20"/>',
+  ticket:'<path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h11A2.5 2.5 0 0 1 20 8.5v1a2.5 2.5 0 0 0 0 5v1a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 15.5v-1a2.5 2.5 0 0 0 0-5z"/><path d="M13 7v10" stroke-dasharray="2 2.5"/>',
+  users:'<circle cx="9" cy="9" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 7.2a3 3 0 0 1 0 5.6"/><path d="M17.5 19a5.4 5.4 0 0 0-2-4.2"/>',
+  gauge:'<path d="M4.5 17a8 8 0 1 1 15 0"/><path d="M12 17l4-5"/><circle cx="12" cy="17" r="1.4" fill="currentColor" stroke="none"/>',
+  car:'<path d="M3.2 15.9v-2.6a2 2 0 0 1 1.35-1.9l1.75-.6 2.1-2.9A2.5 2.5 0 0 1 10.4 6.9h3.2a2.5 2.5 0 0 1 2 1l2.1 2.9 1.75.6a2 2 0 0 1 1.35 1.9v2.6"/><path d="M3.2 15.9h2M18.8 15.9h2"/><path d="M6.3 10.8h11.4"/><circle cx="7.6" cy="16.2" r="2"/><circle cx="16.4" cy="16.2" r="2"/><path d="M9.6 16.2h4.8"/>',
+  badge:'<path d="M12 3.5 19 6v5.5c0 4.2-2.9 7.2-7 8.9-4.1-1.7-7-4.7-7-8.9V6z"/><path d="M9.3 12.2l1.9 1.9 3.6-3.9"/>',
+  building:'<rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M9 16h6"/>',
+  card:'<rect x="3" y="6" width="18" height="12" rx="2.5"/><path d="M3 10.5h18"/><path d="M7 14.5h3"/>',
+  phone:'<path d="M7 3.8h3l1.4 4-1.9 1.4a12 12 0 0 0 5.3 5.3l1.4-1.9 4 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 6a2 2 0 0 1 2-2.2z"/>',
+  layout:'<rect x="3.5" y="5" width="17" height="14" rx="2.2"/><path d="M3.5 9.5h17"/><path d="M9.5 9.5V19"/>',
+  sparkle:'<path d="M12 4l1.8 4.9L19 10.5l-5.2 1.6L12 17l-1.8-4.9L5 10.5l5.2-1.6z"/><path d="M18 16.2l.7 1.9 1.9.7-1.9.7-.7 1.9-.7-1.9-1.9-.7 1.9-.7z"/>',
+};
+
+const VID={"event": "https://www.oneworldlabs.ai/assets/oneworld_loop_event_1080p_v4b_dip.mp4", "home": "https://www.oneworldlabs.ai/assets/oneworld_loop_home_1080p_v4b_dip.mp4", "job": "https://www.oneworldlabs.ai/assets/oneworld_loop_job_1080p_v4b_dip.mp4", "onebusiness": "https://www.oneworldlabs.ai/assets/oneworld_loop_onebusiness_1080p_v4_pingpong.mp4", "onescore": "https://www.oneworldlabs.ai/assets/oneworld_loop_onescore_1080p_v4_pingpong.mp4", "social": "https://www.oneworldlabs.ai/assets/oneworld_loop_social_1080p_v4_pingpong.mp4"}, POS={"event": "https://www.oneworldlabs.ai/assets/oneworld_loop_event_1080p_v4b_dip_poster.jpg", "home": "https://www.oneworldlabs.ai/assets/oneworld_loop_home_1080p_v4b_dip_poster.jpg", "job": "https://www.oneworldlabs.ai/assets/oneworld_loop_job_1080p_v4b_dip_poster.jpg", "onebusiness": "https://www.oneworldlabs.ai/assets/oneworld_loop_onebusiness_1080p_v4_pingpong_poster.jpg", "onescore": "https://www.oneworldlabs.ai/assets/oneworld_loop_onescore_1080p_v4_pingpong_poster.jpg", "social": "https://www.oneworldlabs.ai/assets/oneworld_loop_social_1080p_v4_pingpong_poster.jpg"};
+
+/* ---------- i18n ---------- */
+const ES={role:"Fundador y director ejecutivo",org:"One World Labs, Inc.",
+ blurb:"Mi página de contacto personal. Aquí para conocer One World Labs o para hablar de negocios — en cualquier caso, está en el lugar correcto.",
+ save:"Guardar mi contacto",savehint:"Nombre, ambos números, correo y sitio web — directo a su teléfono.",
+ reach:"Contácteme",apps:"12 apps",hint:"Toque una app para ver qué hace.",
+ Email:"Correo",Call:"Llamar",Text:"Mensaje",Office:"Oficina",
+ explore:"Conocer",open:"Abrir app",soon:"Muy pronto"};
+const EN={explore:"Explore",open:"Open app",soon:"Coming soon"};
+const ESAPP={OneEvent:["Haga su próximo gran plan.","Descubra eventos locales o reúna a su comunidad con el suyo."],
+ OneJob:["Encuentre su próxima oportunidad.","Encuentre trabajo, contrate talento y maneje los detalles de su próximo trabajo."],
+ OneHome:["Encuentre un lugar al que llamar hogar.","Explore casas en arriendo o venta y conecte con las personas detrás de ellas."],
+ OneSocial:["Conecte su mundo.","Reúna su presencia profesional y su actividad social."],
+ OneScore:["Deje que su trabajo hable por usted.","Reúna trabajo, credenciales y reseñas en un solo perfil de reputación."],
+ OnePay:["Mueva el dinero con el trabajo.","Pague y reciba pagos dentro del trabajo, la casa o el evento en el que ya está."],
+ OneAgent:["Personas que lo representan.","Trabaje con un agente que lleva sus propiedades, sus clientes y su reputación."],
+ OneBusiness:["Mantenga su negocio unido.","Encuentre sus servicios, clientes potenciales y resultados en un solo lugar."],
+ OneRide:["Llegue a donde va.","Pida un viaje, o conduzca y gane, con el mismo One ID que ya usa."],
+ OneVoice:["Nunca pierda otra llamada.","Recepción con IA que contesta, califica y agenda mientras usted trabaja."],
+ OnePage:["Un sitio web que trabaja para usted.","Un sitio moderno construido y mantenido al día para su negocio."],
+ OneApp:["Su propia app, hecha para usted.","Su marca en el bolsillo de sus clientes, sobre la base de One World."]};
+let L="en";try{if(localStorage.getItem("owl_lang")==="es")L="es";}catch(e){}
+function tr(){
+ const d=L==="es"?ES:null;
+ document.querySelectorAll("[data-k]").forEach(e=>{ if(!e.dataset.en) e.dataset.en=e.textContent;
+   e.textContent = d&&d[e.dataset.k] ? d[e.dataset.k] : e.dataset.en; });
+ document.documentElement.lang=L;
+ document.getElementById("langcode").textContent=L.toUpperCase();
+ document.querySelector("#lang .flag").textContent = L==="es"?"🇨🇴":"🇺🇸";
+ paintReach(); paintGrid(); if(ov.classList.contains("on")) buildRail(curIdx,false);
+}
+document.getElementById("lang").onclick=e=>{e.stopPropagation();L=L==="en"?"es":"en";LS.set("owl_lang",L);tr();};
+
+/* ---------- theme ---------- */
+const MOON='<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>';
+const SUN='<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>';
+const LS={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},
+          set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+document.body.classList.toggle("dark", LS.get("owl_theme")==="dark");   /* light unless chosen */
+document.getElementById("theme").onclick=e=>{
+ e.stopPropagation();
+ const dark=document.body.classList.toggle("dark");
+ document.getElementById("themeico").innerHTML=dark?SUN:MOON;
+ LS.set("owl_theme",dark?"dark":"light");
+};
+
+/* ---------- reach me ---------- */
+const REACH=[
+ ["WhatsApp","https://wa.me/17705521868","#25D366",'<path d="M4 20l1.1-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9.1 9.3c0 3 2.6 5.6 5.6 5.6l.9-1.6-2-1-.9.9a6.2 6.2 0 0 1-2-2l.9-.9-1-2z" fill="currentColor"/>'],
+ ["Call","tel:+17705521868","#E5484D",'<path d="M7 3.8h3l1.4 4-1.9 1.4a12 12 0 0 0 5.3 5.3l1.4-1.9 4 1.4v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 5 6a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>'],
+ ["Text","sms:+17705521868","#22A6F2",'<path d="M4 5.5h16v10H9.5l-5.5 4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8.5 10.5h7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>'],
+ ["Email","mailto:lee@oneworldlabs.ai","#8B3DEA",'<rect x="3" y="5.5" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4.5 8 7.5 5.2L19.5 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>'],
+ ["Office","tel:+18557700200","#F59E0B",'<path d="M12 3.2a4 4 0 0 1 4 4v3a4 4 0 0 1-8 0v-3a4 4 0 0 1 4-4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0M12 17v3.2M9 20.2h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>'],
+ ["Instagram","https://instagram.com/frazierstrong","#D62976",'<defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FDCB5C"/><stop offset=".35" stop-color="#F2703F"/><stop offset=".65" stop-color="#D62976"/><stop offset="1" stop-color="#7B36CE"/></linearGradient></defs><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5" fill="none" stroke="url(#ig)" stroke-width="1.8"/><circle cx="12" cy="12" r="3.6" fill="none" stroke="url(#ig)" stroke-width="1.8"/><circle cx="16.8" cy="7.2" r="1.15" fill="url(#ig)"/>'],
+];
+function paintReach(){
+ document.getElementById("reach").innerHTML=REACH.map(([n,h,c,p])=>{
+  const label = L==="es"&&ES[n] ? ES[n] : n;
+  return `<a class="ritem" href="${h}"><svg viewBox="0 0 24 24" style="color:${c}">${p}</svg><span>${label}</span></a>`;}).join("");
+}
+
+/* ---------- one world grid ---------- */
+function paintGrid(){
+ document.getElementById("grid").innerHTML=APPS.map(([n,c,k],i)=>
+  `<button class="gi" data-i="${i}"><span class="orb">
+   <svg viewBox="0 0 24 24" style="stroke:${c==='#111111'?'var(--ink)':c}">${ICON[k]}</svg></span><span>${n}</span></button>`).join("");
+ document.querySelectorAll(".gi").forEach(b=>b.onclick=()=>openCard(+b.dataset.i));
+}
+
+/* ---------- collapsibles / photo ---------- */
+document.querySelectorAll(".sechead").forEach(b=>b.onclick=()=>document.getElementById(b.dataset.sec).classList.toggle("open"));
+const lb=document.getElementById("lb");
+document.getElementById("hero").onclick=e=>{ if(e.target.closest(".tools")) return; lb.classList.add("on"); };
+lb.onclick=()=>lb.classList.remove("on");
+
+/* ---------- app cards ---------- */
+const ov=document.getElementById("ov"), rail=document.getElementById("rail"), ovdots=document.getElementById("ovdots");
+let curIdx=0;
+function media(k,c,icon){
+ if(k) return `<video src="${VID[k]}" poster="${POS[k]}" muted loop playsinline preload="none"></video>`;
+ return `<div class="ph" style="background:linear-gradient(150deg,${c}D9,${c}40)"><svg viewBox="0 0 24 24">${ICON[icon]}</svg></div>`;
+}
+function buildRail(i,animate){
+ const t=L==="es"?ES:EN;
+ rail.innerHTML=APPS.map(([n,c,icon,vk,num,head,desc,explore,app])=>{
+  const [h,d] = L==="es"&&ESAPP[n] ? ESAPP[n] : [head,desc];
+  const left  = explore ? `<a href="${explore}" target="_blank">${t.explore} ${n} →</a>` : `<span class="soon">${t.soon}</span>`;
+  const right = app ? `<a href="${app}" target="_blank">${t.open} ↗</a>` : (explore?`<span class="soon">${t.soon}</span>`:"");
+  return `<article class="ac">${media(vk,c,icon)}<span class="eye">${n}</span>
+   <button class="acx" data-x="1"><svg class="sh" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+   <div class="acb"><h3>${h}</h3><p>${d}</p><div class="acts">${left}${right}</div></div></article>`;}).join("");
+ ovdots.innerHTML=APPS.map((_,j)=>`<i class="${j===i?'on':''}"></i>`).join("");
+ const cards=[...rail.querySelectorAll(".ac")];
+ rail.querySelectorAll("[data-x]").forEach(b=>b.onclick=e=>{e.stopPropagation();closeCard();});
+ const io=new IntersectionObserver(es=>es.forEach(e=>{
+   const j=cards.indexOf(e.target), v=e.target.querySelector("video");
+   if(e.intersectionRatio>.7){ e.target.classList.add("cur"); curIdx=j; if(v) v.play().catch(()=>{});
+     ovdots.querySelectorAll("i").forEach((d,q)=>d.classList.toggle("on",q===j)); }
+   else { e.target.classList.remove("cur"); if(v) v.pause(); }
+ }),{root:rail,threshold:[.7]});
+ cards.forEach(c=>io.observe(c));
+ cards[i].scrollIntoView({inline:"center",block:"nearest",behavior:animate?"smooth":"instant"});
+ cards[i].classList.add("cur");
+}
+function openCard(i){ curIdx=i; ov.classList.add("on"); buildRail(i,false); }
+function closeCard(){ ov.classList.remove("on"); rail.querySelectorAll("video").forEach(v=>v.pause()); }
+ov.onclick=e=>{ if(!e.target.closest(".ac")) closeCard(); };
+addEventListener("keydown",e=>{ if(e.key==="Escape"){closeCard();lb.classList.remove("on");} });
+
+/* ---------- vCard (what lee.vcf should serve) ---------- */
+const VCARD_URL="https://www.oneworldlabs.ai/lee/lee.vcf";
+const VCARD=["BEGIN:VCARD","VERSION:3.0","N:Frazier;Lee;;;","FN:Lee Frazier",
+ "ORG:One World Labs, Inc.","TITLE:Founder & Chief Executive",
+ "TEL;TYPE=CELL,VOICE:+17705521868","TEL;TYPE=WORK,VOICE:+18557700200",
+ "EMAIL;TYPE=INTERNET,WORK:lee@oneworldlabs.ai","URL:https://oneworldlabs.ai",
+ "X-SOCIALPROFILE;TYPE=instagram:https://instagram.com/frazierstrong",
+ "NOTE:One World Labs - one account, a world of possibilities.","END:VCARD"].join("\r\n");
+const saveBtn=document.getElementById("save");
+saveBtn.href=VCARD_URL;
+/* In the Claude preview a plain download is blocked, so route through the viewer's save. */
+(async()=>{ const dl = window.claude && claude.use ? await claude.use("downloads") : null;
+  if(!dl) return;                       /* real site: the plain link above does the work */
+  saveBtn.addEventListener("click", async e=>{ e.preventDefault();
+    try{ await dl.save({filename:"lee-frazier.vcf", data:VCARD}); }catch(_){}
   });
-  function markActive(){var rows=menu.querySelectorAll('.langrow');for(var i=0;i<rows.length;i++){rows[i].classList.toggle('active',rows[i].dataset.flag===curFlag);}}
-  var langBtn=document.getElementById('langBtn');
-  function closeMenu(){menu.classList.remove('show');langBtn.setAttribute('aria-expanded','false');}
-  langBtn.addEventListener('click',function(e){e.stopPropagation();menu.classList.toggle('show');langBtn.setAttribute('aria-expanded',menu.classList.contains('show'));});
-  document.addEventListener('click',function(e){if(!menu.contains(e.target)&&e.target!==langBtn)closeMenu();});
-  markActive();applyLang();
-
-  /* ============ theme toggle ============ */
-  document.getElementById('themeBtn').addEventListener('click',function(){
-    var light=document.documentElement.getAttribute('data-theme')==='light';
-    var next=light?'dark':'light';
-    document.documentElement.setAttribute('data-theme',next);
-    try{localStorage.setItem('owl_theme',next);}catch(e){}
-  });
-
-  /* ============ panels (single binding per control — kit lesson C1) ============ */
-  var cT=document.getElementById('contactToggle'), oT=document.getElementById('owlToggle');
-  var cP=document.getElementById('contactPanel'), oP=document.getElementById('owlPanel');
-  var cTile=document.getElementById('contactTile'), oTile=document.getElementById('owlTile');
-  function setState(openC,openO){
-    cP.classList.toggle('show',openC); oP.classList.toggle('show',openO);
-    cT.setAttribute('aria-expanded',openC); oT.setAttribute('aria-expanded',openO);
-    cTile.classList.toggle('open',openC); oTile.classList.toggle('open',openO);
-    cTile.classList.toggle('dim',openO); oTile.classList.toggle('dim',openC);
-  }
-  cT.addEventListener('click',function(){ setState(!cP.classList.contains('show'),false); });
-  oT.addEventListener('click',function(){ setState(false,!oP.classList.contains('show')); if(oP.classList.contains('show')){requestAnimationFrame(focusScale);setTimeout(focusScale,250);} });
-
-  /* ============ carousel centre-magnify ============ */
-  var car=document.querySelector('.car');
-  /* GRID, not a carousel — nothing to magnify. Kept as a no-op because the
-     panel-open handler calls it twice and I would rather not thread a flag
-     through that. */
-  function focusScale(){ return;
-
-    var r=car.getBoundingClientRect(), cx=r.left+r.width/2;
-    var tiles=car.querySelectorAll('a.app');
-    for(var i=0;i<tiles.length;i++){
-      var b=tiles[i].getBoundingClientRect();
-      var d=Math.abs(b.left+b.width/2-cx);
-      var f=Math.max(0,1-d/280);
-      var s=0.94+0.20*f;
-      tiles[i].style.transform='scale('+s.toFixed(3)+')';
-      tiles[i].style.opacity=(0.82+0.18*f).toFixed(2);
-      tiles[i].style.zIndex=f>0.6?'2':'1';
-    }
-  }
-
-
-  /* ============ founder code copy ============ */
-  var gift=document.getElementById('giftCode');
-  function copyCode(){
-    var done=function(){gift.textContent=(D[curLang]||D.en).copied;setTimeout(function(){gift.textContent='FOUNDER0001';},1500);};
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText('FOUNDER0001').then(done,done);}
-    else{done();}
-  }
-  gift.addEventListener('click',copyCode);
-  gift.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();copyCode();}});
-
-  /* ============ photo modal ============ */
-  var modal=document.getElementById('photoModal');
-  document.getElementById('photoBtn').addEventListener('click',function(){ modal.classList.add('show'); });
-  document.getElementById('modalClose').addEventListener('click',function(){ modal.classList.remove('show'); });
-  modal.addEventListener('click',function(e){ if(e.target===modal) modal.classList.remove('show'); });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape'){modal.classList.remove('show');closeMenu();} });
 })();
-</script>
-</body>
-</html>
+
+paintReach(); paintGrid();
+</script></body></html>
